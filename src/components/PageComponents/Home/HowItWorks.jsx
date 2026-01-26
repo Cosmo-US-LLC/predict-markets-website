@@ -12,6 +12,8 @@ const tokenImage4 = "https://www.figma.com/api/mcp/asset/91c3db00-99fa-437a-9c7d
 const tokenImage5 = "https://www.figma.com/api/mcp/asset/1693afdf-d600-4451-8ca4-d1517f215a9a";
 const fireIcon = "https://www.figma.com/api/mcp/asset/da80776d-b734-4243-ade7-edc6cbded29e";
 
+import howItWorksBg from "../../../assets/images/home/how_does_work/how_does_work_image.webp";
+
 export default function HowItWorks({
   title = "How does it work?",
   subtitle = "PredictMarkets is a decentralised prediction platform where users trade on real world event outcomes. Every trade generates fees that directly strengthen the $PREDICT ecosystem through daily buybacks, token burns, and revenue sharing designed to increase long term token value.",
@@ -111,10 +113,10 @@ export default function HowItWorks({
         </div>
 
         {/* Flow Diagram Container */}
-        <div className="relative w-full h-[1000px] md:h-[1092px]">
+        <div className="relative w-full p-6">
    
 
-        
+        <img src={howItWorksBg} alt="How It Works" className="w-full h-full object-cover" />
        
 
       
