@@ -16,7 +16,6 @@ import HowItWorks from "../components/PageComponents/Home/HowItWorks";
 import ExclusivePresaleBenefits from "../components/PageComponents/Home/ExclusivePresaleBenefits";
 import GetExtraRewards from "../components/PageComponents/Home/GetExtraRewards";
 import PredictMarketsHero from "../components/PageComponents/Home/PredictMarketsHero";
-import FeaturedInSection from "../components/PageComponents/Home/FeaturedInSection";
 import { faqData, faqConfig } from "../data/faqData";
 import { roadmapData, roadmapConfig } from "../data/roadmapData";
 import { pressReleasesData, pressReleasesConfig } from "../data/pressReleasesData";
@@ -34,7 +33,6 @@ import { howItWorksSteps, howItWorksArrows, howItWorksConfig } from "../data/how
 import { exclusivePresaleBenefits, exclusivePresaleBenefitsConfig } from "../data/exclusivePresaleBenefitsData";
 import { membershipCards, getExtraRewardsConfig } from "../data/getExtraRewardsData";
 import { predictMarketsHeroConfig } from "../data/predictMarketsHeroData";
-import { featuredInLogos, featuredInSectionConfig } from "../data/featuredInSectionData";
 
 
 export function Home() {
@@ -48,10 +46,6 @@ export function Home() {
         featuredInLeftText={predictMarketsHeroConfig.featuredInLeftText}
         featuredInRightText={predictMarketsHeroConfig.featuredInRightText}
         centerImage={predictMarketsHeroConfig.centerImage}
-      />
-      <FeaturedInSection
-        title={featuredInSectionConfig.title}
-        logos={featuredInLogos}
       />
        <ExchangeListings
         title={exchangeListingsConfig.title}

@@ -7,9 +7,9 @@ export default function FeaturedInSection({
   }
 
   return (
-    <section className="bg-[#020b10] py-8 md:py-12 px-4 md:px-8 lg:px-[80px]">
-      <div className="max-w-[1280px] mx-auto">
-        <div className="bg-[#0f0f0f] border-[0.5px] border-[#2104ff] rounded-[15px] px-6 md:px-8 py-6 md:py-8 flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-center md:justify-start">
+    
+      <div className="w-full max-w-[1280px] py-8 md:py-12 mx-auto">
+        <div className="backdrop-blur-[13.65px] bg-[#020B106B] border-[0.5px] border-[#262626] rounded-[15px] px-6 md:px-8 py-6 md:py-8 flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-center md:justify-start">
           {/* Title */}
           <p className="text-white text-base md:text-lg font-medium leading-6 tracking-[0.32px] whitespace-nowrap shrink-0">
             {title}
@@ -41,6 +41,6 @@ export default function FeaturedInSection({
           </div>
         </div>
       </div>
-    </section>
+     
   );
 }
