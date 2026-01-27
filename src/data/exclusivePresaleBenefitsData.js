@@ -1,8 +1,7 @@
-// Images
-const coinImage = "https://www.figma.com/api/mcp/asset/ed7849d7-50d6-4fdf-9e9e-0ec8b9ffdc88";
-const laptopImage = "https://www.figma.com/api/mcp/asset/ee24cbe0-7b9c-47c8-a63a-d6a594ad5727";
-const treasureChestImage = "https://www.figma.com/api/mcp/asset/aac13667-db3d-486a-ab89-b33aab4fd13b";
-const diamondImage = "https://www.figma.com/api/mcp/asset/b6990fee-59e3-4f35-b08c-bf04d6925639";
+import coinImage from "../assets/images/home/exclusive_presale_benefits/presale_icon_1.svg";
+import laptopImage from "../assets/images/home/exclusive_presale_benefits/presale_icon_2.svg";
+import treasureChestImage from "../assets/images/home/exclusive_presale_benefits/presale_icon_3.svg";
+import diamondImage from "../assets/images/home/exclusive_presale_benefits/presale_icon_4.svg";
 
 export const exclusivePresaleBenefits = [
   {

@@ -26,7 +26,7 @@ export default function ExchangeListings({
           {exchanges.map((exchange) => (
             <div
               key={exchange.id}
-              className="bg-[#0f0f0f] border-[0.5px] border-[#2104ff] rounded-[15px] h-[158px] w-full md:w-[229px] overflow-hidden relative flex items-center justify-center"
+              className="bg-[#0f0f0f] gradient-border-rounded !rounded-[15px] h-[156px] w-full md:w-[229px] overflow-hidden relative flex items-center justify-center"
             >
               <div className="flex items-center justify-center w-full h-full">
                 <img

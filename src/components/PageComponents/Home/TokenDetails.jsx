@@ -2,7 +2,7 @@ export default function TokenDetails({
   title = 'Token Details',
   subtitle = 'The token allocation is structured to give early supporters the strongest advantage.',
   chartImage,
-  allocations = [],
+ 
 }) {
   return (
     <section 
@@ -24,9 +24,9 @@ export default function TokenDetails({
         </div>
 
         {/* Chart Container */}
-        <div className="bg-[rgba(54,117,171,0.17)] border-[0.5px] border-[#2104ff] rounded-[15px] h-[693px] relative w-full max-w-[1209px] mx-auto overflow-visible">
-          {/* Chart Image - Centered */}
-          <div className="absolute left-1/2 top-[67.5px] -translate-x-1/2 w-[712.524px] h-[554.186px]">
+        <div className="bg-[rgba(54,117,171,0.17)] flex items-center justify-center gradient-border-rounded !rounded-[15px] h-[600px] relative w-full max-w-[1209px] mx-auto overflow-visible">
+           
+          <div className=" w-[712.524px] h-[554.186px]">
             <img
               src={chartImage}
               alt="Token Allocation Chart"
@@ -36,47 +36,8 @@ export default function TokenDetails({
               }}
             />
           </div>
-
-          {/* Allocation Labels with Lines */}
-          {allocations.map((allocation) => (
-            <div key={allocation.id} className="absolute pointer-events-none">
-              {/* Line/Connector */}
-              {allocation.lineImage && allocation.linePosition && (
-                <div
-                  className="absolute"
-                  style={{
-                    top: allocation.linePosition.top || '0',
-                    left: allocation.linePosition.left || '0',
-                    transform: allocation.lineTransform || 'none',
-                  }}
-                >
-                  <img
-                    src={allocation.lineImage}
-                    alt=""
-                    className="w-auto h-auto max-w-none"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                </div>
-              )}
-
-              {/* Label */}
-              {allocation.position && (
-                <div
-                  className="absolute"
-                  style={{
-                    top: allocation.position.top || '0',
-                    left: allocation.position.left || '0',
-                  }}
-                >
-                  <p className="text-white text-xl font-medium leading-7 capitalize whitespace-pre-wrap">
-                    {allocation.percentage}% {allocation.label}
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
+ 
+         
         </div>
       </div>
     </section>
