@@ -1,6 +1,10 @@
 const checkIcon = 'https://www.figma.com/api/mcp/asset/98735592-09d4-488c-898c-9230ff86e5ca';
 const crossIcon = 'https://www.figma.com/api/mcp/asset/9a5df82e-e46b-4c7b-9ed9-c308db3ff115';
 
+import predictMarketsIcon from "../assets/images/home/set_as_apart/cardIcon1.svg";
+import polyMarketIcon from "../assets/images/home/set_as_apart/cardIcon2.svg";
+import kalshiIcon from "../assets/images/home/set_as_apart/cardIcon3.svg";
+
 export const comparisonTableData = [
   {
     id: 'token-name',
@@ -80,15 +84,15 @@ export const whatSetsUsApartConfig = {
   platforms: {
     predictMarkets: {
       name: 'PredictMarkets',
-      icon: 'https://www.figma.com/api/mcp/asset/48ac0276-6f6f-4e3e-bebe-748521e789db',
+      icon: predictMarketsIcon,
     },
     polyMarket: {
       name: 'PolyMarket',
-      icon: 'https://www.figma.com/api/mcp/asset/ef020baa-2fd1-4eaf-899d-046a1b863f4e',
+      icon: polyMarketIcon,
     },
     kalshi: {
       name: 'Kalshi',
-      icon: 'https://www.figma.com/api/mcp/asset/d658dbdb-8923-4f31-a99a-44b2deb4e503',
+      icon: kalshiIcon,
     },
   },
   icons: {

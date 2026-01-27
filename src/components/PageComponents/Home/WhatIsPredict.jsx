@@ -33,7 +33,7 @@ export default function WhatIsPredict({
       </div>
 
       {/* Main Card Container */}
-      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] border-[0.5px] border-[#2104ff] rounded-[44px] w-full max-w-[1230px] mx-auto px-6 md:px-12 py-8 md:py-8 min-h-[698px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
+      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] gradient-border-rounded !rounded-[44px] w-full max-w-[1220px] mx-auto px-6 md:px-12 py-8 md:py-8 h-[638px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
         {/* Left Content */}
         <div className="flex-1 flex flex-col gap-[22px] items-start z-10">
           {/* Title */}

@@ -3,6 +3,12 @@ import FeaturedIn from './FeaturedIn';
 import FeaturedInSection from './FeaturedInSection';
 import { featuredInLogos, featuredInSectionConfig } from '../../../data/featuredInSectionData';
 
+import predictMarketsHeroCoin1 from "../../../assets/images/home/predict_hero/coin_1.webp";
+import predictMarketsHeroCoin2 from "../../../assets/images/home/predict_hero/coin_2.webp";
+import predictMarketsHeroCoin3 from "../../../assets/images/home/predict_hero/coin_3.webp";
+import predictMarketsHeroCoin4 from "../../../assets/images/home/predict_hero/coin_4.webp";
+import predictMarketsHeroCoin5 from "../../../assets/images/home/predict_hero/coin_5.webp";
+
 import predictHeroBg from "../../../assets/images/home/predict_hero/predict_hero_bg.webp";
 import predictDashboard from "../../../assets/images/home/predict_hero/predict_hero_desboard.webp";
 
@@ -30,7 +36,24 @@ export default function PredictMarketsHero({
         />
       </div>
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-[1280px] px-4 md:px-8 py-12 md:py-20 mx-auto">
+      <div className='w-full max-w-[1440px] mx-auto relative'>
+        <div className='absolute top-[10%] left-[-3%] w-[150px] h-[150px]'>
+          <img src={predictMarketsHeroCoin1} alt="" className='w-full h-full object-cover' />
+        </div>
+        <div className='absolute top-[28%] left-[20%] w-[120px] h-[120px]'>
+          <img src={predictMarketsHeroCoin2} alt="" className='w-full h-full object-cover' />
+        </div>
+      
+      <div className='absolute top-[16%] right-[-1%] w-[150px] h-[150px]'>
+        <img src={predictMarketsHeroCoin3} alt="" className='w-full h-full object-cover' />
+      </div>
+      <div className='absolute top-[65%] left-[2%] w-[100px] h-[100px]'>
+        <img src={predictMarketsHeroCoin4} alt="" className='w-full h-full object-cover' />
+      </div>
+      <div className='absolute bottom-[15%] right-0 w-[150px] h-[150px]'>
+        <img src={predictMarketsHeroCoin5} alt="" className='w-full h-full object-cover' />
+      </div>
+      <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-[1280px] px-4 md:px-8 py-12 md:py-14 mx-auto">
         {/* Featured In Badge - At Top */}
        
           <FeaturedIn
@@ -83,6 +106,7 @@ export default function PredictMarketsHero({
             logos={featuredInLogos}
           />
         </div>
+      </div>
       </div>
     </section>
   );

@@ -53,8 +53,8 @@ export default function Markets({
   }
 
   return (
-    <section className="w-full bg-[#020b10] px-4 md:px-8 lg:px-[80px] py-12 md:py-[60px]">
-      <div className="max-w-[1280px] mx-auto flex flex-col gap-12 md:gap-[48px]">
+    <section className="w-full bg-[#020b10]  py-12 md:py-[60px]">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-12">
         {/* Header */}
         <div className="flex items-start justify-between w-full">
           <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent whitespace-nowrap">
@@ -67,7 +67,7 @@ export default function Markets({
             <button
               onClick={scrollPrev}
               disabled={!canScrollPrev}
-              className="relative w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="relative w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:cursor-pointer hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               style={{
                 backgroundImage: `url(${arrowBg})`,
                 backgroundSize: 'cover',
@@ -90,7 +90,7 @@ export default function Markets({
             <button
               onClick={scrollNext}
               disabled={!canScrollNext}
-              className="relative w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="relative w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:cursor-pointer hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               style={{
                 backgroundImage: `url(${arrowBg})`,
                 backgroundSize: 'cover',
@@ -117,7 +117,7 @@ export default function Markets({
             {markets.map((market) => (
               <div
                 key={market.id}
-                className="flex-[0_0_313px] min-w-[313px] shrink-0 h-[460px] relative rounded-[13px] overflow-hidden shadow-[0px_40px_80px_0px_rgba(102,91,124,0.1)]"
+                className="flex-[0_0_296px] min-w-[296px] shrink-0 h-[460px] relative rounded-[13px] overflow-hidden shadow-[0px_40px_80px_0px_rgba(102,91,124,0.1)]"
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 rounded-[13px]">
@@ -176,7 +176,7 @@ export default function Markets({
                     <h3 className="text-xl font-semibold leading-[28px] tracking-[0.4px] mb-0">
                       {market.title}
                     </h3>
-                    <p className="text-sm font-normal leading-[22px] tracking-[0.28px] opacity-80 mt-1">
+                    <p className="text-sm h-[110px] font-normal leading-[22px] tracking-[0.28px] opacity-80 mt-1">
                       {market.description}
                     </p>
                   </div>
