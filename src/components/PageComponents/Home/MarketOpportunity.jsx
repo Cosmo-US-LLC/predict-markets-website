@@ -30,9 +30,9 @@ export default function MarketOpportunity({
       <div className="relative z-10 flex items-center justify-center px-4 md:px-8">
         <div className="backdrop-blur-[18.65px] bg-[#020b10] gradient-border-rounded !rounded-[44px] w-full max-w-[1220px] overflow-hidden flex flex-col lg:flex-row gap-8 md:gap-[18px] items-center px-6 md:px-[80px] py-8 md:py-[32px]">
           {/* Left Side - Chart */}
-          <div className="relative h-[487px] w-full lg:w-[426px] flex-shrink-0">
+          <div className="relative md:h-[487px] h-[397px] w-full lg:w-[426px] flex-shrink-0">
             {/* Chart Image */}
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[389px] h-[351px]">
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 md:w-[389px] md:h-[351px] w-[289px] h-[251px]">
               <img
                 src={chartImage}
                 alt="Market Opportunity Chart"
@@ -67,21 +67,17 @@ export default function MarketOpportunity({
           {/* Right Side - Content */}
           <div className="flex flex-col gap-8 md:gap-12 flex-1 max-w-[628px]">
             {/* Text Content */}
-            <div className="flex flex-col gap-4">
-              <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+            <div className="flex flex-col gap-4 text-center md:text-left">
+              <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
                 {title}
               </h2>
-              <div className="text-[#cacaca] text-base leading-6 tracking-[0.32px] whitespace-pre-line">
-                {description.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className={index > 0 ? 'mt-4' : ''}>
-                    {paragraph}
-                  </p>
-                ))}
+              <div className="text-[#cacaca] paragraph-regular whitespace-pre-line">
+                 {description}
               </div>
             </div>
 
             {/* Buy Button */}
-            <div>
+            <div className='flex justify-center md:justify-start'>
               <Link
                 to={buyButtonLink}
                 className="btn_primary w-[232px] h-[50px] flex items-center justify-center"
