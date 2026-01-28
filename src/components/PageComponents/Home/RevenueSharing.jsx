@@ -27,7 +27,7 @@ export default function RevenueSharing({
       </div>
 
       {/* Main Card Container */}
-      <div className="relative z-10 backdrop-blur-[18.65px] bg-[#020b10] gradient-border-rounded z !rounded-[44px] w-full max-w-[1220px] mx-auto px-6 md:px-8  py-6 flex flex-col lg:flex-row gap-8 lg:gap-[32px] items-center overflow-hidden">
+      <div className="relative z-10 backdrop-blur-[18.65px] bg-[#020b10]  !rounded-[44px] w-full max-w-[1220px] mx-auto px-6 md:px-8  py-6 flex flex-col lg:flex-row gap-8 lg:gap-[32px] items-center overflow-hidden">
         
         {/* Left Content */}
         <div className=" flex flex-col gap-[22px] items-start z-10">

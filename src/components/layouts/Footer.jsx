@@ -31,7 +31,7 @@ export function Footer() {
         {/* Main Content Section */}
         <div className="flex flex-col gap-[42px] mb-[42px]">
           {/* Top Section - Four Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-[94px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-18">
             {/* Logo and Description */}
             <div className="flex flex-col gap-[45px] max-w-[267px]">
               <div className="flex items-center gap-[11.03px]">
@@ -121,8 +121,8 @@ export function Footer() {
           </div>
 
           {/* Legal Disclaimer Section */}
-          <div className="border-t border-b border-white/10 py-[53px]">
-            <p className="text-white text-sm leading-[22px] tracking-[0.28px] text-center max-w-[1192px] mx-auto">
+          <div className="border-t border-b border-white/10 py-[43px]">
+            <p className="text-white text-sm leading-[22px] tracking-[0.28px] text-center md:text-left mx-auto">
               Cryptocurrency may be unregulated in your jurisdiction, and its value can fluctuate, leading to potential gains or losses. Any profits might be subject to capital gains or other taxes, depending on your local laws. The content on this platform does not constitute an offer, recommendation, or financial advice to buy, sell, or engage in any cryptocurrency transactions. You are solely responsible for assessing whether a transaction aligns with your personal goals, financial circumstances, and risk tolerance. We strongly recommend consulting trusted and licensed legal, tax, or financial professionals before making any decisions. Trading cryptocurrencies carries significant risks, including the potential for partial or total loss of your funds. Thorough research is crucial. BlockchainFX does not guarantee any performance, outcome, or return of capital for any cryptocurrency mentioned on this platform. By using this platform, you agree to our Terms of Service, Privacy Policy, Cookie Policy, and any applicable token sale agreements. The platform's content is not intended for use in jurisdictions where its distribution or use would violate local laws or regulations.
             </p>
           </div>

@@ -54,7 +54,7 @@ export default function WhatSetsUsApart({
 
   return (
     <section className="bg-[#020b10] py-12 md:py-20">
-      <div className="max-w-[1180px] mx-auto px-4 md:px-8 flex flex-col gap-8 md:gap-10">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-8 md:gap-10">
         {/* Header Section */}
         <div className="flex flex-col gap-3 max-w-[868px] text-center mx-auto">
           <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">

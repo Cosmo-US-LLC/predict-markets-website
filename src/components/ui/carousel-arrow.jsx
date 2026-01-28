@@ -9,7 +9,7 @@ export function CarouselLeftArrow({ className, onClick, disabled, ...props }) {
       onClick={onClick}
       disabled={disabled}
       className={cn(
-        "w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center",
+        "w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:cursor-pointer hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center",
         className
       )}
       style={{
@@ -32,7 +32,7 @@ export function CarouselRightArrow({ className, onClick, disabled, ...props }) {
       onClick={onClick}
       disabled={disabled}
       className={cn(
-        "w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center",
+        "w-[52px] h-[52px] rounded-[40px] border-0 text-white hover:cursor-pointer hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center",
         className
       )}
       style={{
