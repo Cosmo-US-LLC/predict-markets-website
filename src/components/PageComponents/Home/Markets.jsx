@@ -182,7 +182,7 @@ export default function Markets({
                   </div>
 
                   {/* View Markets Link */}
-                  <div className="relative h-[34px] w-full mt-2">
+                  {/* <div className="relative h-[34px] w-full mt-2">
                     <div className="absolute top-0 left-0 right-0 h-px bg-white opacity-10" />
                     <div className="absolute top-[13px] left-0 right-0 h-[21px] flex items-center justify-between">
                       <Link
@@ -204,7 +204,7 @@ export default function Markets({
                         <ChevronRight className="w-5 h-5 text-white hidden" />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Border */}

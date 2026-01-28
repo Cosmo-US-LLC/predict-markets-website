@@ -17,9 +17,9 @@ const docsLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: 'https://instagram.com/predictmarkets', label: 'Instagram' },
+  // { icon: Instagram, href: 'https://instagram.com/predictmarkets', label: 'Instagram' },
   { icon: Send, href: 'https://t.me/predictmarkets', label: 'Telegram' },
-  { icon: Twitter, href: 'https://x.com/predictmarkets', label: 'X (Twitter)' },
+  // { icon: Twitter, href: 'https://x.com/predictmarkets', label: 'X (Twitter)' },
 ];
 
 export function Footer() {
@@ -31,9 +31,9 @@ export function Footer() {
         {/* Main Content Section */}
         <div className="flex flex-col gap-[24px] md:gap-[42px] mb-[30px] md:mb-[42px]">
           {/* Top Section - Four Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-18 gap-9">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-14 gap-9">
             {/* Logo and Description */}
-            <div className="flex flex-col gap-[24px] md:gap-[45px] max-w-[267px]">
+            <div className="flex flex-col gap-[24px] md:gap-[45px] max-w-[257px]">
               <div className="flex items-center gap-[11.03px]">
                 <img 
                   src={logoImage} 
@@ -47,7 +47,7 @@ export function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="flex flex-col gap-4 max-w-[190px]">
+            <div className="flex flex-col gap-4 max-w-[200px]">
               <h3 className="text-white flex flex-row items-center gap-2 text-xl font-semibold leading-7 tracking-[0.4px]">
                 <div className="h-[8px] w-[8px] rounded-full bg-[#fff]"></div>
                 <span>Quick Links</span>
@@ -66,7 +66,7 @@ export function Footer() {
             </div>
 
             {/* Docs */}
-            <div className="flex flex-col gap-4 max-w-[177px]">
+            <div className="flex flex-col gap-4 max-w-[197px]">
               <h3 className="text-white flex flex-row items-center gap-2 text-xl font-semibold leading-7 tracking-[0.4px]">
               <div className="h-[8px] w-[8px] rounded-full bg-[#fff]"></div>
                 <span>Docs</span>
