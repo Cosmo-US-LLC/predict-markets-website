@@ -33,13 +33,13 @@ const faqData = [
 export default function FrequentlyAskedQuestions() {
   return (
     <section className="bg-[#020b10] py-12 md:py-20">
-      <div className="max-w-[1280px] mx-auto px-4">
+      <div className="max-w-[1280px] mx-auto md:px-4 px-0">
         {/* Header Section */}
         <div className="flex flex-col gap-2 items-center text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
             Frequently Asked Questions
           </h2>
-          <p className="text-[#cacaca] text-base leading-6 tracking-[0.32px] max-w-[812px]">
+          <p className="text-[#cacaca] paragraph-regular max-w-[812px]">
             Quick answers to help you understand Predictmarkets, launch timeline,<br />
             our native token and find the support you need.
           </p>
@@ -59,13 +59,13 @@ export default function FrequentlyAskedQuestions() {
                 )}
               >
                 <AccordionTrigger className="px-6 py-6 hover:no-underline text-left bg-transparent">
-                  <span className="text-white text-xl font-medium leading-7 capitalize flex-1 text-left">
+                  <h4 className="text-[#fff] heading-four capitalize flex-1 text-left">
                     {faq.question}
-                  </span>
+                  </h4>
                   <ChevronDown className="h-6 w-6 text-white shrink-0 ml-4 transition-transform duration-200 data-[state=open]:rotate-180" />
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6 pt-0">
-                  <p className="text-[#cacaca] text-base leading-6 tracking-[0.32px]">
+                  <p className="text-[#cacaca] paragraph-regular">
                     {faq.answer}
                   </p>
                 </AccordionContent>

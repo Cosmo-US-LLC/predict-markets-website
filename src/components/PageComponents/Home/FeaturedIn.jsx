@@ -9,7 +9,7 @@ export default function FeaturedIn({
   return (
     <div className="flex items-center justify-center w-full mb-6">
       <div className="bg-white flex gap-2 items-center px-4 py-1.5 rounded-[40px]">
-        <p className="text-black text-sm font-normal leading-[22px] tracking-[0.28px] whitespace-nowrap">
+        <p className="text-black text-[12px] md:text-[14px] font-normal leading-[22px] tracking-[0.28px] whitespace-nowrap">
           {leftText}
         </p>
         <div className="bg-black h-5 w-px shrink-0" />

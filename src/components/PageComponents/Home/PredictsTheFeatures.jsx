@@ -12,7 +12,7 @@ import {
 
 
 export default function PredictsTheFeatures({
-  title = "Redefining How the World\nPredicts the Future",
+  title = "Redefining How the World Predicts the Future",
   subtitle = "The building blocks behind the world's most rewarding prediction platform",
   features = [
     {
@@ -63,16 +63,11 @@ export default function PredictsTheFeatures({
     >
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-12 items-center">
         {/* Header */}
-        <div className="flex flex-col gap-2 md:gap-[8px] items-center text-center max-w-[1034px]">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent max-w-[952px] whitespace-pre-wrap">
-            {title.split('\n').map((line, index) => (
-              <span key={index}>
-                {line}
-                {index < title.split('\n').length - 1 && <br />}
-              </span>
-            ))}
+        <div className="flex flex-col gap-2 md:gap-[8px] items-center text-center max-w-[834px]">
+          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent max-w-[952px] whitespace-pre-wrap">
+             {title}
           </h2>
-          <p className="text-[#a3a3a3] text-base md:text-[16px] font-normal leading-[24px] tracking-[0.32px] whitespace-pre-wrap">
+          <p className="text-[#a3a3a3] paragraph-regular whitespace-pre-wrap">
             {subtitle}
           </p>
         </div>
@@ -89,7 +84,7 @@ export default function PredictsTheFeatures({
           >
             <CarouselContent>
               {features.map((feature) => (
-                <CarouselItem key={feature.id} className="basis-full">
+                <CarouselItem key={feature.id} className="basis-[85%]">
                   <div className="bg-[#0f0f0f] gradient-border-rounded w-full overflow-hidden flex flex-col gap-3 pb-6 pt-4 px-4">
                     {/* Image */}
                     <div className="h-[152px] relative rounded-[15px] overflow-hidden">
@@ -105,10 +100,10 @@ export default function PredictsTheFeatures({
 
                     {/* Title and Description */}
                     <div className="flex flex-col gap-1.5 items-start">
-                      <h4 className="text-white text-base font-medium leading-[28px] capitalize w-full">
+                      <h4 className="text-white heading-four capitalize w-full">
                         {feature.title}
                       </h4>
-                      <p className="text-[#cacaca] text-base font-normal leading-[24px] tracking-[0.32px] w-full whitespace-pre-wrap">
+                      <p className="text-[#cacaca] paragraph-regular w-full whitespace-pre-wrap">
                         {feature.description}
                       </p>
                     </div>

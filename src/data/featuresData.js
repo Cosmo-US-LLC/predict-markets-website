@@ -45,6 +45,6 @@ export const featuresData = [
 ];
 
 export const featuresConfig = {
-  title: "Redefining How the World\nPredicts the Future",
+  title: "Redefining How the World Predicts the Future",
   subtitle: "The building blocks behind the world's most rewarding prediction platform",
 };
