@@ -1,20 +1,23 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Send } from 'lucide-react';
 import { cn } from '../../../lib/utils';
+import socialsAwarenessBg from '../../../assets/images/home/socials_awareness/socials_awareness_bg.webp';
+import socialsAwarenessCard1 from '../../../assets/images/home/socials_awareness/socials_awareness_card1.webp';
+import socialsAwarenessCard2 from '../../../assets/images/home/socials_awareness/socials_awareness_card2.webp';
 
 const heroCards = [
   {
     id: 'whitepaper',
     title: 'Whitepaper',
     buttonText: 'Read Here',
-    image: 'https://www.figma.com/api/mcp/asset/8bccd8d9-0906-4db7-9ff2-10da059bce7c',
+    image: socialsAwarenessCard1,
     link: '/whitepaper',
   },
   {
     id: 'how-to-buy',
     title: 'How to Buy',
     buttonText: 'Learn More',
-    image: 'https://www.figma.com/api/mcp/asset/44eb5fa8-18cb-4f68-a2c7-6e4d83e9252e',
+    image: socialsAwarenessCard2,
     link: '/how-to-buy',
   },
 ];
@@ -38,14 +41,22 @@ const socialCards = [
 
 export default function SocialsAwareness() {
   return (
-    <section className="bg-[#020b10] py-12 md:py-20 px-4 md:px-8 relative">
+    <section className="bg-[#020b10] py-12 md:py-20  relative">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-10 w-full h-full object-cover">
+      <img
+        src={socialsAwarenessBg}
+        alt="Socials Awareness Background"
+        className="w-full h-full object-cover"
+      />
+      </div>
       {/* Border */}
       <div className="absolute border-b border-[#191919] inset-x-0 top-0" />
       
-      <div className="max-w-[1280px] mx-auto">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="flex flex-col lg:flex-row gap-4 items-start">
           {/* Left Side - Image Cards */}
-          <div className="flex flex-col sm:flex-row gap-4 flex-1">
+          <div className="flex flex-col relative z-20 sm:flex-row gap-4 flex-1">
             {heroCards.map((card) => (
               <Link
                 key={card.id}
@@ -65,14 +76,11 @@ export default function SocialsAwareness() {
                 </div>
                 
                 {/* Content */}
-                <div className={cn(
-                  "absolute flex flex-col gap-3",
-                  card.id === 'whitepaper' ? "left-1/2 -translate-x-1/2 bottom-[116px]" : "left-4 bottom-[116px]"
-                )}>
+                <div className='flex flex-col gap-3 absolute bottom-[20px] left-[20px]'>
                   <h3 className="text-white text-2xl font-medium leading-8 capitalize">
                     {card.title}
                   </h3>
-                  <button className="btn_primary w-[240px]">
+                  <button className="btn_primary w-[200px]">
                     {card.buttonText}
                   </button>
                 </div>
@@ -81,7 +89,7 @@ export default function SocialsAwareness() {
           </div>
 
           {/* Right Side - Social Cards */}
-          <div className="flex flex-col gap-4 w-full lg:w-[416px]">
+          <div className="flex flex-col relative z-20 gap-4 w-full lg:w-[416px]">
             {socialCards.map((social) => {
               const Icon = social.icon;
               return (

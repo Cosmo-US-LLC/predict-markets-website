@@ -22,7 +22,7 @@ import { pressReleasesData, pressReleasesConfig } from "../data/pressReleasesDat
 import { howToBuySteps, howToBuyConfig } from "../data/howToBuyData";
 import { marketOpportunityConfig } from "../data/marketOpportunityData";
 import { comparisonTableData, whatSetsUsApartConfig } from "../data/whatSetsUsApartData";
-import { tokenDetailsConfig } from "../data/tokenDetailsData";
+import { tokenDetailsConfig, tokenDetailsCards } from "../data/tokenDetailsData";
 import { exchangeListingsData, exchangeListingsConfig } from "../data/exchangeListingsData";
 import { whatIsPredictConfig } from "../data/whatIsPredictData";
 import { featuresData, featuresConfig } from "../data/featuresData";
@@ -122,6 +122,7 @@ export function Home() {
         title={tokenDetailsConfig.title}
         subtitle={tokenDetailsConfig.subtitle}
         chartImage={tokenDetailsConfig.chartImage}
+        details={tokenDetailsCards}
       />
       <Roadmap 
         roadmapItems={roadmapData}
