@@ -19,7 +19,7 @@ export default function WhatIsPredict({
   buyButtonLink = "/buy",
 }) {
   return (
-    <section className="relative bg-black w-full overflow-hidden min-h-[698px] flex items-center justify-center py-12 md:py-16">
+    <section className="relative bg-black w-full overflow-hidden flex items-center justify-center px-4 md:px-0 py-12 md:py-16">
       {/* Blurred Background */}
       <div className="absolute inset-0 w-full h-full blur-[16.8px]">
         <img
@@ -33,7 +33,7 @@ export default function WhatIsPredict({
       </div>
 
       {/* Main Card Container */}
-      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] gradient-border-rounded !rounded-[44px] w-full max-w-[1220px] mx-auto px-6 md:px-12 py-8 md:py-8 h-[638px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
+      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] gradient-border-rounded !rounded-[32px] w-full max-w-[1220px] mx-auto px-6 md:px-12 py-8 md:py-8 md:h-[638px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
         {/* Left Content */}
         <div className="flex-1 flex flex-col gap-[22px] items-start z-10">
           {/* Title */}
@@ -84,7 +84,7 @@ export default function WhatIsPredict({
 
         {/* Right Visual Content */}
         <div className="flex-1 relative w-full h-[400px] md:h-[630px] flex items-center justify-center z-10">
-          {/* Ellipse Background */}
+         
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[445px] h-[498px] opacity-50">
             <img
               src={ellipseImage}
@@ -96,7 +96,7 @@ export default function WhatIsPredict({
             />
           </div>
 
-          {/* Coin Image */}
+           
           <div className="relative w-full max-w-[547px] h-full flex items-center justify-center">
             <img
               src={coinImage}

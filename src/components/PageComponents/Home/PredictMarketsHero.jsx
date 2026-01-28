@@ -23,34 +23,25 @@ export default function PredictMarketsHero({
   featuredInRightText = "Built on Ethereum",
 }) {
   return (
-    <section className="relative w-full overflow-hidden min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img
-          src={predictHeroBg}
-          alt=""
-          className="absolute h-[101.18%] left-0 top-[0.02%] w-full object-cover"
-          onError={(e) => {
-            e.target.style.display = 'none';
-          }}
-        />
-      </div>
+    <section className="relative w-full overflow-hidden min-h-screen predict_hero_bg flex items-center justify-center">
+      
+
       {/* Main Content */}
       <div className='w-full max-w-[1440px] mx-auto relative'>
-        <div className='absolute top-[10%] left-[-3%] w-[150px] h-[150px]'>
+        <div className='absolute md:top-[10%] top-[11%] md:left-[-3%] left-[-8%] md:w-[150px] md:h-[150px] w-[100px] h-[100px]'>
           <img src={predictMarketsHeroCoin1} alt="" className='w-full h-full object-cover' />
         </div>
-        <div className='absolute top-[28%] left-[20%] w-[120px] h-[120px]'>
+        <div className='absolute md:top-[28%] top-[77%] md:left-[20%] left-[23%] md:w-[120px] md:h-[120px] w-[60px] h-[60px]'>
           <img src={predictMarketsHeroCoin2} alt="" className='w-full h-full object-cover' />
         </div>
       
-      <div className='absolute top-[16%] right-[-1%] w-[150px] h-[150px]'>
+      <div className='absolute md:top-[16%] top-[22%] md:right-[-1%] right-[-11%] md:w-[150px] md:h-[150px] w-[100px] h-[100px]'>
         <img src={predictMarketsHeroCoin3} alt="" className='w-full h-full object-cover' />
       </div>
-      <div className='absolute top-[65%] left-[2%] w-[100px] h-[100px]'>
+      <div className='absolute top-[65%] md:left-[2%] left-[-6%] md:w-[100px] md:h-[100px] w-[60px] h-[60px]'>
         <img src={predictMarketsHeroCoin4} alt="" className='w-full h-full object-cover' />
       </div>
-      <div className='absolute bottom-[15%] right-0 w-[150px] h-[150px]'>
+      <div className='absolute md:bottom-[15%] bottom-[1.5%] md:right-0 right-[-2%] md:w-[150px] md:h-[150px] w-[100px] h-[100px]'>
         <img src={predictMarketsHeroCoin5} alt="" className='w-full h-full object-cover' />
       </div>
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-[1280px] px-4 md:px-8 py-12 md:py-14 mx-auto">
@@ -67,12 +58,12 @@ export default function PredictMarketsHero({
         {/* Hero Content - Below Image */}
         <div className="flex flex-col gap-6 items-center text-center mb-8 md:mb-12">
           {/* Title */}
-          <h1 className="text-4xl md:text-[60px] font-medium leading-[68px] tracking-[-1px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent max-w-[784px]">
+          <h1 className="heading-one capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent max-w-[784px]">
             {title}
           </h1>
 
           {/* Description */}
-          <p className="text-white text-base font-normal leading-6 tracking-[0.32px] max-w-[564px]">
+          <p className="text-white paragraph-regular max-w-[564px]">
             {description}
           </p>
 
@@ -85,19 +76,7 @@ export default function PredictMarketsHero({
           </Link>
         </div>
 
-         {/* Center Image - In Middle */}
-         {predictDashboard && (
-          <div className="relative w-full  h-full flex items-center justify-center">
-            <img
-              src={predictDashboard}
-              alt="PredictMarkets Hero"
-              className="w-full h-full object-contain"
-              onError={(e) => {
-                e.target.style.display = 'none';
-              }}
-            />
-          </div>
-        )}
+        <div className="predict_hero_dashboard w-full h-full"></div>
 
         {/* Featured In Section - At Bottom */}
         <div className="w-full">

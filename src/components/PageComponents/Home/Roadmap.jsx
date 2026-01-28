@@ -40,10 +40,10 @@ export default function Roadmap({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="flex flex-col gap-[14px] items-center mb-12 md:mb-12">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center">
+          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center">
             {title}
           </h2>
-          <p className="text-white text-base leading-6 tracking-[0.32px] text-center max-w-4xl">
+          <p className="text-white paragraph-regular text-center max-w-4xl">
             {subtitle}
           </p>
         </div>
@@ -61,15 +61,15 @@ export default function Roadmap({
             <CarouselContent className="-ml-2 md:-ml-4">
               {roadmapItems.map((item) => (
                 <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-full md:basis-[400px]">
-                  <div className="bg-[#0f0f0f] gradient-border-rounded !rounded-[15px] px-4 py-8 md:px-4 md:py-8 h-[474px] flex flex-col gap-[30px]">
+                  <div className="bg-[#0f0f0f] gradient-border-rounded !rounded-[15px] px-4 py-8 md:px-4 md:py-8 h-[490px] flex flex-col gap-[30px]">
                     {/* Header */}
                     <div className="flex items-center justify-between">
-                      <h3 className="text-white text-xl md:text-2xl font-medium leading-8 capitalize whitespace-nowrap">
+                      <h3 className="text-white heading-three capitalize whitespace-pre-line">
                         {item.title}
                       </h3>
                       <div
                         className={cn(
-                          "h-[32px] rounded-full px-3 flex items-center justify-center min-w-[100px]",
+                          "h-[32px] rounded-full px-3 flex items-center justify-center min-w-[100px] ",
                           item.statusType === 'completed'
                             ? "bg-[#2104ff]"
                             : item.statusType === 'current'
@@ -77,7 +77,7 @@ export default function Roadmap({
                             : "border border-[#2104ff]"
                         )}
                       >
-                        <span className="text-white text-sm font-normal leading-[6.462px] tracking-[-0.42px]">
+                        <span className="text-white text-[12px] font-normal leading-[18px] tracking-[0.24px]">
                           {item.status}
                         </span>
                       </div>
@@ -94,7 +94,7 @@ export default function Roadmap({
                           </div>
 
                           {/* Text */}
-                          <div className="text-[#cacaca] text-base max-w-[280px] leading-6 tracking-[0.32px]">
+                          <div className="text-[#cacaca] text-[16px] max-w-[280px] paragraph-regular ">
                             {listItem}
                           </div>
                         </div>

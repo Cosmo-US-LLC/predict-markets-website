@@ -37,7 +37,7 @@ export const roadmapData = [
   },
   {
     id: 'market-expansion',
-    title: 'Market Expansion',
+    title: 'Market\n Expansion',
     status: 'Upcoming',
     statusType: 'upcoming',
     items: [
@@ -50,7 +50,7 @@ export const roadmapData = [
   },
   {
     id: 'global-adoption',
-    title: 'Global Adoption',
+    title: 'Global\n Adoption',
     status: 'Upcoming',
     statusType: 'upcoming',
     items: [

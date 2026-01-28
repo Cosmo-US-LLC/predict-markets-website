@@ -11,7 +11,7 @@ export default function PressReleases({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="flex flex-col gap-[48px] items-center mb-12 md:mb-12">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center">
+          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center">
             {title}
           </h2>
 
@@ -33,10 +33,10 @@ export default function PressReleases({
                     }}
                   />
                   <div className="relative px-[18px] py-[9px] z-10">
-                    <h3 className="text-white text-xl font-medium leading-7 capitalize mb-1.5">
+                    <h4 className="text-white heading-four capitalize mb-1.5">
                       {release.title}
-                    </h3>
-                    <div className="text-[#cacaca] text-base leading-6 tracking-[0.32px] whitespace-pre-line">
+                    </h4>
+                    <div className="text-[#cacaca] paragraph-regular whitespace-pre-line">
                       {release.description}
                     </div>
                   </div>

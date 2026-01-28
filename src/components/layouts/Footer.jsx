@@ -17,9 +17,9 @@ const docsLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: 'https://instagram.com/predictmarkets', label: 'Instagram' },
+  // { icon: Instagram, href: 'https://instagram.com/predictmarkets', label: 'Instagram' },
   { icon: Send, href: 'https://t.me/predictmarkets', label: 'Telegram' },
-  { icon: Twitter, href: 'https://x.com/predictmarkets', label: 'X (Twitter)' },
+  // { icon: Twitter, href: 'https://x.com/predictmarkets', label: 'X (Twitter)' },
 ];
 
 export function Footer() {
@@ -29,11 +29,11 @@ export function Footer() {
     <footer className="bg-[#020b10] text-white">
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-[50px]">
         {/* Main Content Section */}
-        <div className="flex flex-col gap-[42px] mb-[42px]">
+        <div className="flex flex-col gap-[24px] md:gap-[42px] mb-[30px] md:mb-[42px]">
           {/* Top Section - Four Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-18">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-14 gap-9">
             {/* Logo and Description */}
-            <div className="flex flex-col gap-[45px] max-w-[267px]">
+            <div className="flex flex-col gap-[24px] md:gap-[45px] max-w-[257px]">
               <div className="flex items-center gap-[11.03px]">
                 <img 
                   src={logoImage} 
@@ -47,11 +47,12 @@ export function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="flex flex-col gap-4 max-w-[190px]">
-              <h3 className="text-white text-xl font-semibold leading-7 tracking-[0.4px]">
-                Quick Links
+            <div className="flex flex-col gap-4 max-w-[200px]">
+              <h3 className="text-white flex flex-row items-center gap-2 text-xl font-semibold leading-7 tracking-[0.4px]">
+                <div className="h-[8px] w-[8px] rounded-full bg-[#fff]"></div>
+                <span>Quick Links</span>
               </h3>
-              <nav className="flex flex-col gap-1.5">
+              <nav className="flex flex-col gap-1.5 pl-4">
                 {quickLinks.map((link) => (
                   <Link
                     key={link.path}
@@ -65,11 +66,12 @@ export function Footer() {
             </div>
 
             {/* Docs */}
-            <div className="flex flex-col gap-4 max-w-[177px]">
-              <h3 className="text-white text-xl font-semibold leading-7 tracking-[0.4px]">
-                Docs
+            <div className="flex flex-col gap-4 max-w-[197px]">
+              <h3 className="text-white flex flex-row items-center gap-2 text-xl font-semibold leading-7 tracking-[0.4px]">
+              <div className="h-[8px] w-[8px] rounded-full bg-[#fff]"></div>
+                <span>Docs</span>
               </h3>
-              <nav className="flex flex-col gap-1.5">
+              <nav className="flex flex-col gap-1.5 pl-4">
                 {docsLinks.map((link) => (
                   <Link
                     key={link.path}
@@ -122,15 +124,15 @@ export function Footer() {
 
           {/* Legal Disclaimer Section */}
           <div className="border-t border-b border-white/10 py-[43px]">
-            <p className="text-white text-sm leading-[22px] tracking-[0.28px] text-center md:text-left mx-auto">
+            <p className="text-white text-[12px] md:text-[14px] leading-[18px] md:leading-[22px] tracking-[0.24px] md:tracking-[0.28px] text-left mx-auto">
               Cryptocurrency may be unregulated in your jurisdiction, and its value can fluctuate, leading to potential gains or losses. Any profits might be subject to capital gains or other taxes, depending on your local laws. The content on this platform does not constitute an offer, recommendation, or financial advice to buy, sell, or engage in any cryptocurrency transactions. You are solely responsible for assessing whether a transaction aligns with your personal goals, financial circumstances, and risk tolerance. We strongly recommend consulting trusted and licensed legal, tax, or financial professionals before making any decisions. Trading cryptocurrencies carries significant risks, including the potential for partial or total loss of your funds. Thorough research is crucial. BlockchainFX does not guarantee any performance, outcome, or return of capital for any cryptocurrency mentioned on this platform. By using this platform, you agree to our Terms of Service, Privacy Policy, Cookie Policy, and any applicable token sale agreements. The platform's content is not intended for use in jurisdictions where its distribution or use would violate local laws or regulations.
             </p>
           </div>
         </div>
 
         {/* Bottom Section - Copyright and Cookie Management */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-base leading-6 tracking-[0.32px] text-white">
-          <p>Copyright {currentYear}. PredictMarkets, All Rights Reserved.</p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[14px] md:text-base text-center md:text-left leading-[22px] md:leading-6 tracking-[0.28px] md:tracking-[0.32px] text-[#fff]">
+          <p>Copyright {currentYear}. PredictMarkets, <br className="md:hidden" /> All Rights Reserved.</p>
           <Link
             to="/cookie-management"
             className="hover:opacity-80 transition-opacity"
