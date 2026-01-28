@@ -57,7 +57,7 @@ export default function Markets({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-12">
         {/* Header */}
         <div className="flex items-start justify-between w-full">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent whitespace-nowrap">
+          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent ">
             {title}
           </h2>
           
@@ -140,7 +140,7 @@ export default function Markets({
                 </div>
 
                 {/* Top Overlay */}
-                <div className="absolute top-0 left-0 right-0 h-[100px] bg-gradient-to-b from-[#0a0a0a] to-transparent opacity-40" />
+                {/* <div className="absolute top-0 left-0 right-0 h-[100px] bg-gradient-to-b from-[#0a0a0a] to-transparent opacity-40" /> */}
 
                 {/* Icon */}
                 <div className="absolute left-4 top-8 w-8 h-8 z-10">
@@ -173,16 +173,16 @@ export default function Markets({
                 {/* Content at Bottom */}
                 <div className="absolute bottom-0 left-0 right-0 flex flex-col gap-2 p-4">
                   <div className="flex flex-col items-start text-white">
-                    <h3 className="text-xl font-semibold leading-[28px] tracking-[0.4px] mb-0">
+                    <h3 className="text-[18px] md:text-[20px] font-[600] md:leading-[28px] leading-[26px] md:tracking-[0.4px] tracking-[0.36px] mb-0">
                       {market.title}
                     </h3>
-                    <p className="text-sm h-[110px] font-normal leading-[22px] tracking-[0.28px] opacity-80 mt-1">
+                    <p className="text-[12px] md:text-[14px] h-[110px] font-normal md:leading-[22px] leading-[20px] md:tracking-[0.28px] tracking-[0.24px] opacity-80 mt-1">
                       {market.description}
                     </p>
                   </div>
 
                   {/* View Markets Link */}
-                  <div className="relative h-[34px] w-full mt-2">
+                  {/* <div className="relative h-[34px] w-full mt-2">
                     <div className="absolute top-0 left-0 right-0 h-px bg-white opacity-10" />
                     <div className="absolute top-[13px] left-0 right-0 h-[21px] flex items-center justify-between">
                       <Link
@@ -204,7 +204,7 @@ export default function Markets({
                         <ChevronRight className="w-5 h-5 text-white hidden" />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Border */}

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@import "./assets/style/imageLink.css";
 /* Font Face Declarations */
 @font-face {
   font-family: 'Helvetica Neue Medium Extended';
@@ -38,11 +39,48 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Helvetica Neue Medium Extended', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* .gradient-border {
-  border: 0.5px solid;
-  border-radius: 15px !important;
-  border-image: radial-gradient(circle, #2104FF 0%, #FFFFFF 50%, #2104FF 100%) 1;
-} */
+.heading-one {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 68px;  
+  letter-spacing: -1px;
+}
+.heading-two {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 53px;  
+  letter-spacing: -2px;
+}
+.heading-three {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;  
+  letter-spacing: 0.48px;
+}
+.heading-four {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;  
+  letter-spacing: 0.4px;
+}
+
+.paragraph-regular {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;  
+  letter-spacing: 0.32px;
+}
+.paragraph-medium {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;  
+  letter-spacing: 0.36px;
+}
 
 .gradient-border-rounded {
   position: relative;
@@ -141,4 +179,45 @@ h1, h2, h3, h4, h5, h6 {
   
   --font-family-heading: var(--font-heading);
   --font-family-body: var(--font-body);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .heading-one {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;  
+    letter-spacing: -2px;
+  }
+  .heading-two {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;  
+    letter-spacing: -2px;
+  }
+  .heading-three {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;  
+    letter-spacing: 0.32px;
+  }
+  .heading-four {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;  
+    letter-spacing: 0.32px;
+  }
+  .paragraph-regular {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;  
+    letter-spacing: 0.28px;
+  }
 }

@@ -1,12 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Circle } from 'lucide-react';
 import backgroundImage from '../../../assets/images/home/prediction_platform/prediction_platform_bg.webp';
-import predictionPlatformBg from '../../../assets/images/home/prediction_platform/prediction_platform_card_bg.webp';
 import liveIndicatorDot from '../../../assets/images/home/prediction_platform/live_dot.webp';
 
-// const backgroundImage = 'https://www.figma.com/api/mcp/asset/273c6853-b05b-43ee-b290-32f371b01adc';
-// const coinImage = 'https://www.figma.com/api/mcp/asset/7fbd8ea6-1fad-4098-81aa-d9048ee3ffde';
-// const liveIndicatorDot = 'https://www.figma.com/api/mcp/asset/d6d94eab-fa5c-4f94-a511-d34428416a05';
 
 export default function PredictionPlatform({ 
   title = 'The Most Rewarding Global\nDecentralised Prediction Platform',
@@ -33,23 +29,18 @@ export default function PredictionPlatform({
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[503px] max-w-[1280px] mx-auto px-4 md:px-8 py-12 md:py-20">
         {/* Card Container */}
-        <div className="relative prediction_platform_card_bg backdrop-blur-[18.65px] bg-[rgba(15,15,15,0.96)] gradient-border-rounded !rounded-[44px] flex  items-center justify-center w-full min-h-[503px] overflow-hidden">
+        <div className="relative prediction_platform_card_bg backdrop-blur-[18.65px] bg-[rgba(15,15,15,0.96)] gradient-border-rounded !rounded-[30px] flex  items-center justify-center w-full min-h-[503px] overflow-hidden">
         
 
           {/* Content */}
           <div className="relative z-10 flex flex-col gap-[22px] items-center justify-center min-h-[290px] px-4 py-8">
             {/* Title */}
-            <h1 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center max-w-[1041px]">
-              {title.split('\n').map((line, index) => (
-                <span key={index}>
-                  {line}
-                  {index < title.split('\n').length - 1 && <br />}
-                </span>
-              ))}
-            </h1>
+            <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center max-w-[941px]">
+              {title}
+            </h2>
 
             {/* Subtitle */}
-            <p className="text-[#cacaca] text-lg md:text-[20px] leading-7 tracking-[0.4px] text-center max-w-[939px]">
+            <p className="text-[#cacaca] text-lg md:text-[20px] paragraph-medium text-center max-w-[939px]">
               {subtitle}
             </p>
 

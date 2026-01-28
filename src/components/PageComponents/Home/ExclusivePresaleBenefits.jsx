@@ -35,7 +35,7 @@ export default function ExclusivePresaleBenefits({
     <section className="bg-[#020b10] py-12 md:py-[60px] ">
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Title */}
-        <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center mb-12 md:mb-[48px]">
+        <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center mb-12 md:mb-[48px]">
           {title}
         </h2>
 
@@ -60,10 +60,10 @@ export default function ExclusivePresaleBenefits({
 
               {/* Content */}
               <div className="flex flex-col gap-3 items-center text-center w-full">
-                <h3 className="text-white text-xl md:text-2xl font-medium leading-8 capitalize">
+                <h3 className="text-white heading-three capitalize">
                   {benefit.title}
                 </h3>
-                <p className="text-[#cacaca] text-base font-normal leading-6 tracking-[0.32px]">
+                <p className="text-[#cacaca] paragraph-regular">
                   {benefit.description}
                 </p>
               </div>

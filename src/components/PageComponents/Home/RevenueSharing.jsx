@@ -13,9 +13,9 @@ export default function RevenueSharing({
   revenuePercentage = "50% Daily Revenue",
 }) {
   return (
-    <section className="relative bg-black w-full overflow-hidden py-12 md:py-[60px] flex items-center justify-center min-h-[600px]">
+    <section className="relative bg-black w-full overflow-hidden py-12 md:py-[60px] flex items-center justify-center px-2 md:px-0">
       {/* Blurred Background */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[985px] blur-[16.8px]">
+      <div className="absolute w-full h-full">
         <img
           src={backgroundImage}
           alt="Background"
@@ -27,17 +27,17 @@ export default function RevenueSharing({
       </div>
 
       {/* Main Card Container */}
-      <div className="relative z-10 backdrop-blur-[18.65px] bg-[#020b10]  !rounded-[44px] w-full max-w-[1220px] mx-auto px-6 md:px-8  py-6 flex flex-col lg:flex-row gap-8 lg:gap-[32px] items-center overflow-hidden">
+      <div className="relative z-10 backdrop-blur-[18.65px] bg-[#020b10]  !rounded-[32px] w-full max-w-[1220px] mx-auto px-4 md:px-8  py-8 md:py-6 flex flex-col lg:flex-row md:gap-8 gap-0 items-center overflow-hidden">
         
         {/* Left Content */}
         <div className=" flex flex-col gap-[22px] items-start z-10">
           {/* Title */}
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent w-full">
+          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent w-full">
             {title}
           </h2>
 
           {/* Description */}
-          <p className="text-[#cacaca] text-base md:text-[16px] font-normal leading-[24px] tracking-[0.32px] max-w-[526px] whitespace-pre-wrap">
+          <p className="text-[#cacaca] paragraph-regular max-w-[526px] whitespace-pre-wrap">
             {description}
           </p>
 
@@ -51,10 +51,10 @@ export default function RevenueSharing({
         </div>
 
         {/* Right Visual Content */}
-        <div className="flex relative w-full lg:w-[511px] h-[464px] items-center justify-center z-10">
+        <div className="flex relative w-full md:w-[511px] md:h-[464px] h-[340px] items-center justify-center z-10">
           {/* Coins Background (Blurred) */}
-          <div className="absolute left-[-500px] top-[-313px] w-[1138.38px] h-[1329.855px] flex items-center justify-center pointer-events-none">
-            <div className="rotate-[-13.18deg] w-[898.665px] h-[1055.426px] blur-[15.163px] opacity-47">
+          <div className="rotate-[-13.18deg] absolute md:left-[-370px] left-[-110px] md:top-[-213px] top-[-30px] md:w-[899.38px] w-[500px] md:h-[1055.855px] h-[500px] blur-[15.163px] opacity-47 flex items-center justify-center pointer-events-none">
+     
               <img
                 src={coinsImage}
                 alt=""
@@ -64,10 +64,10 @@ export default function RevenueSharing({
                 }}
               />
             </div>
-          </div>
+          
 
           {/* Coins Foreground */}
-          <div className="absolute left-[-311px] top-[-126px] w-[823px] h-[765px] pointer-events-none">
+          <div className="absolute md:left-[-311px] left-[-90px] md:top-[-126px] top-[-40px] md:w-[823px] w-[500px] md:h-[765px] h-[500px] pointer-events-none">
             <img
               src={coinsImage}
               alt=""
@@ -79,8 +79,8 @@ export default function RevenueSharing({
           </div>
 
           {/* Blue Sphere with Revenue Text */}
-          <div className="absolute left-[14.65px] top-[300.9px] bg-[#2104ff]  rounded-[124.901px] w-[200.803px] h-[200.803px] flex flex-col items-center justify-center py-[32.896px] shadow-[inset_0px_4.112px_30.429px_0px_rgba(0,0,0,0.85)] z-1">
-            <p className="text-white text-[32.896px] font-medium leading-[32.896px] text-center">
+          <div className="absolute md:left-[14.65px] left-[96px] md:top-[300.9px] top-[240px] bg-[#2104ff]  rounded-[124.901px] md:w-[200.803px] w-[140px] md:h-[200.803px] h-[140px] flex flex-col items-center justify-center py-[32.896px] shadow-[inset_0px_4.112px_30.429px_0px_rgba(0,0,0,0.85)] z-1">
+            <p className="text-white md:text-[32.896px] text-[20px] font-medium leading-[32.896px] text-center">
               {revenuePercentage.includes('Daily') ? (
                 <>
                   50% Daily<br />Revenue
