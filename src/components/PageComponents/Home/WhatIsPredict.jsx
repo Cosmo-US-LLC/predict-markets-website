@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
-import coinImage from "../../../assets/images/home/what_is_predict/what_is_predict_coin_image.webp";
+import coinImage from "../../../assets/images/home/what_is_predict/what_is_predict_coin_image2.webp";
 import ellipseImage from "../../../assets/images/home/what_is_predict/what_is_predict_ellipse.png";
 import backgroundImage from "../../../assets/images/home/what_is_predict/what_is_predict_bg.webp";
 import checkIcon from "../../../assets/images/home/what_is_predict/what_is_predict_check.webp";
