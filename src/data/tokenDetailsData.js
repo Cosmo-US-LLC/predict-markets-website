@@ -1,67 +1,17 @@
-export const tokenAllocation = [
-  {
-    id: 'public-sale',
-    label: 'Public Sale',
-    percentage: 40,
-    position: { top: '134px', left: '833px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/b63c35cf-3fda-423d-88d1-02c5084cd5cf',
-    linePosition: { top: '171.22px', left: '765.76px' },
-    lineTransform: 'rotate(180deg) scaleY(-1)',
-  },
-  {
-    id: 'liquidity-pool',
-    label: 'Liquidity Pool',
-    percentage: 25,
-    position: { top: '501px', left: '148px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/8a4ce965-6d35-4e39-8181-0a601c935a07',
-    linePosition: { top: '463.79px', left: '222.43px' },
-    lineTransform: 'scaleY(-1)',
-  },
-  {
-    id: 'staking-rewards',
-    label: 'Staking Rewards',
-    percentage: 20,
-    position: { top: '588px', left: '821px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/17ff6097-650f-4f5e-bf5b-11e97e71a7dd',
-    linePosition: { top: '457.1px', left: '699.33px' },
-    lineTransform: 'rotate(180deg)',
-  },
-  {
-    id: 'cex-listing',
-    label: 'Reserved for CEX Listing',
-    percentage: 10,
-    position: { top: '254px', left: '166px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/5ee8c889-25ce-4b62-b6ef-ac2aba33355a',
-    linePosition: { top: '317.6px', left: '222.43px' },
-  },
-  {
-    id: 'development',
-    label: 'Development',
-    percentage: 3,
-    position: { top: '100px', left: '194px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/ef5a0d15-488c-40b9-8184-f5a280ce2e00',
-    linePosition: { top: '137.46px', left: '248.41px' },
-  },
-  {
-    id: 'marketing',
-    label: 'Marketing',
-    percentage: 1,
-    position: { top: '68px', left: '420.91px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/12310462-a3d9-4441-80db-d887ae57c5b9',
-    linePosition: { top: '100.66px', left: '423.77px' },
-  },
-  {
-    id: 'team',
-    label: 'Team',
-    percentage: 1,
-    position: { top: '68px', left: '664.38px' },
-    lineImage: 'https://www.figma.com/api/mcp/asset/12310462-a3d9-4441-80db-d887ae57c5b9',
-    linePosition: { top: '100.66px', left: '423.77px' },
-  },
+import tokenDetailsImage from "../assets/images/home/token_details/token_details_image.webp";
+
+export const tokenDetailsCards = [
+  { id: 'symbol', label: 'Token Symbol', value: 'PREDICT' },
+  { id: 'launch', label: 'Launch on', value: 'Uniswap and CEX' },
+  { id: 'type', label: 'Token Type', value: 'Ethereum' },
+  { id: 'presale', label: 'Presale allocation', value: '1,000,000,000 $PREDICT tokens will be sold during the presale' },
+  { id: 'decimal', label: 'Decimal', value: '18' },
+  { id: 'supply', label: 'Total Supply', value: '2,500,000,000' },
+  { id: 'contract', label: 'Token Contract Address', value: '0xd0d801eea2c2422df3e626b82ebbb618f4cc445e', copyable: true },
 ];
 
 export const tokenDetailsConfig = {
   title: 'Token Details',
   subtitle: 'The token allocation is structured to give early supporters the strongest advantage.',
-  chartImage: 'https://www.figma.com/api/mcp/asset/7c19c8e9-db13-48e3-981b-17a2865d00a6',
+  chartImage: tokenDetailsImage,
 };

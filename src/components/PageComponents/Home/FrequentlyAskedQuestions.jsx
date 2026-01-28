@@ -32,8 +32,8 @@ const faqData = [
 
 export default function FrequentlyAskedQuestions() {
   return (
-    <section className="bg-[#020b10] py-12 md:py-20 px-4 md:px-8">
-      <div className="max-w-[1280px] mx-auto">
+    <section className="bg-[#020b10] py-12 md:py-20">
+      <div className="max-w-[1280px] mx-auto px-4">
         {/* Header Section */}
         <div className="flex flex-col gap-2 items-center text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">

@@ -14,13 +14,13 @@ export default function HowToBuy({
 
   return (
     <section 
-      className="bg-[#020b10] py-12 md:py-20 px-4 md:px-8 relative overflow-hidden"
+      className="bg-[#020b10] py-12 md:py-20  relative overflow-hidden"
       style={{
         backgroundImage: `radial-gradient(ellipse at center, rgba(33, 4, 255, 0.63) 0%, rgba(33, 4, 255, 0) 70%), linear-gradient(90deg, rgb(2, 11, 16) 0%, rgb(2, 11, 16) 100%)`,
         backgroundSize: '100% 100%',
       }}
     >
-      <div className="max-w-[1280px] mx-auto relative z-10">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 relative z-10">
         {/* Header Section */}
         <div className="flex flex-col gap-[9px] items-center text-center mb-12 md:mb-12">
           <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2.56px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
@@ -37,7 +37,7 @@ export default function HowToBuy({
             <div
               key={step.id}
               className={cn(
-                "bg-[#0f0f0f] border-[0.5px] border-[#2104ff] rounded-[15px] p-4 md:p-[26px] flex flex-col gap-[19px]",
+                "bg-[#0f0f0f] gradient-border-rounded p-4 md:p-[26px] flex flex-col gap-[19px]",
                 index === 0 && "md:col-span-1",
                 index === 1 && "md:col-span-1",
                 index === 2 && "md:col-span-1",
@@ -88,7 +88,7 @@ export default function HowToBuy({
         <div className="flex justify-center">
           <Link
             to={buyButtonLink}
-            className="btn_primary w-[232px] h-[50px] flex items-center justify-center"
+            className="btn_primary w-[232px] flex items-center justify-center"
           >
             {buyButtonText}
           </Link>

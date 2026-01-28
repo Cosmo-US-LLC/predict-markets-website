@@ -7,8 +7,8 @@ export default function PressReleases({
   }
 
   return (
-    <section className="bg-[#020b10] py-12 md:py-20 px-4 md:px-8">
-      <div className="max-w-[1280px] mx-auto">
+    <section className="bg-[#020b10] py-12 md:py-20 ">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="flex flex-col gap-[48px] items-center mb-12 md:mb-12">
           <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center">
@@ -20,7 +20,7 @@ export default function PressReleases({
             {pressReleases.map((release) => (
               <div
                 key={release.id}
-                className="bg-[#0f0f0f] border-[0.5px] border-[#2104ff] rounded-[15px] p-[18px] flex flex-col gap-4 w-full md:w-[374px]"
+                className="bg-[#0f0f0f] gradient-border-rounded !rounded-[15px] p-[18px] flex flex-col gap-4 w-full md:w-[390px]"
               >
                 {/* Image Section */}
                 <div className="relative h-[303px] rounded-[15px] overflow-hidden flex flex-col justify-end">
@@ -43,7 +43,7 @@ export default function PressReleases({
                 </div>
 
                 {/* Logo Section */}
-                <div className="h-[42px] flex items-center justify-center">
+                <div className="h-[42px] flex items-center">
                   <img
                     src={release.logo}
                     alt={`${release.id} logo`}

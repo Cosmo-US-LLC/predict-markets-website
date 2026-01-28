@@ -16,25 +16,23 @@ import HowItWorks from "../components/PageComponents/Home/HowItWorks";
 import ExclusivePresaleBenefits from "../components/PageComponents/Home/ExclusivePresaleBenefits";
 import GetExtraRewards from "../components/PageComponents/Home/GetExtraRewards";
 import PredictMarketsHero from "../components/PageComponents/Home/PredictMarketsHero";
-import FeaturedInSection from "../components/PageComponents/Home/FeaturedInSection";
 import { faqData, faqConfig } from "../data/faqData";
 import { roadmapData, roadmapConfig } from "../data/roadmapData";
 import { pressReleasesData, pressReleasesConfig } from "../data/pressReleasesData";
 import { howToBuySteps, howToBuyConfig } from "../data/howToBuyData";
 import { marketOpportunityConfig } from "../data/marketOpportunityData";
 import { comparisonTableData, whatSetsUsApartConfig } from "../data/whatSetsUsApartData";
-import { tokenAllocation, tokenDetailsConfig } from "../data/tokenDetailsData";
+import { tokenDetailsConfig, tokenDetailsCards } from "../data/tokenDetailsData";
 import { exchangeListingsData, exchangeListingsConfig } from "../data/exchangeListingsData";
 import { whatIsPredictConfig } from "../data/whatIsPredictData";
 import { featuresData, featuresConfig } from "../data/featuresData";
 import { marketsData, marketsConfig } from "../data/marketsData";
 import { revenueSharingConfig } from "../data/revenueSharingData";
 import { predictionPlatformConfig } from "../data/predictionPlatformData";
-import { howItWorksSteps, howItWorksArrows, howItWorksConfig } from "../data/howItWorksData";
+import { howItWorksConfig } from "../data/howItWorksData";
 import { exclusivePresaleBenefits, exclusivePresaleBenefitsConfig } from "../data/exclusivePresaleBenefitsData";
 import { membershipCards, getExtraRewardsConfig } from "../data/getExtraRewardsData";
 import { predictMarketsHeroConfig } from "../data/predictMarketsHeroData";
-import { featuredInLogos, featuredInSectionConfig } from "../data/featuredInSectionData";
 
 
 export function Home() {
@@ -48,10 +46,6 @@ export function Home() {
         featuredInLeftText={predictMarketsHeroConfig.featuredInLeftText}
         featuredInRightText={predictMarketsHeroConfig.featuredInRightText}
         centerImage={predictMarketsHeroConfig.centerImage}
-      />
-      <FeaturedInSection
-        title={featuredInSectionConfig.title}
-        logos={featuredInLogos}
       />
        <ExchangeListings
         title={exchangeListingsConfig.title}
@@ -69,11 +63,9 @@ export function Home() {
         subtitle={featuresConfig.subtitle}
         features={featuresData}
       />
-       <HowItWorks
+      <HowItWorks
         title={howItWorksConfig.title}
         subtitle={howItWorksConfig.subtitle}
-        steps={howItWorksSteps}
-        arrows={howItWorksArrows}
       />
         <Markets
         title={marketsConfig.title}
@@ -130,7 +122,7 @@ export function Home() {
         title={tokenDetailsConfig.title}
         subtitle={tokenDetailsConfig.subtitle}
         chartImage={tokenDetailsConfig.chartImage}
-        allocations={tokenAllocation}
+        details={tokenDetailsCards}
       />
       <Roadmap 
         roadmapItems={roadmapData}

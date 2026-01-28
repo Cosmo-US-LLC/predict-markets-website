@@ -13,7 +13,7 @@ export default function MarketOpportunity({
   return (
     <section className="relative bg-black w-full overflow-hidden py-12 md:py-20">
       {/* Blurred Background */}
-      <div className="absolute left-1/2 top-[calc(50%+61.5px)] -translate-x-1/2 -translate-y-1/2 w-[1448px] h-[965px] flex items-center justify-center">
+      <div className="absolute inset-0 bg-cover bg-center w-full mx-auto h-full flex items-center justify-center">
         <div className="rotate-180 blur-[16.8px] w-full h-full">
           <img
             src={backgroundImage}
@@ -28,7 +28,7 @@ export default function MarketOpportunity({
 
       {/* Main Content Container */}
       <div className="relative z-10 flex items-center justify-center px-4 md:px-8">
-        <div className="backdrop-blur-[18.65px] bg-[#020b10] border-[0.5px] border-[#2104ff] rounded-[44px] w-full max-w-[1280px] overflow-hidden flex flex-col lg:flex-row gap-8 md:gap-[58px] items-center px-6 md:px-[80px] py-8 md:py-[32px]">
+        <div className="backdrop-blur-[18.65px] bg-[#020b10] gradient-border-rounded !rounded-[44px] w-full max-w-[1220px] overflow-hidden flex flex-col lg:flex-row gap-8 md:gap-[18px] items-center px-6 md:px-[80px] py-8 md:py-[32px]">
           {/* Left Side - Chart */}
           <div className="relative h-[487px] w-full lg:w-[426px] flex-shrink-0">
             {/* Chart Image */}

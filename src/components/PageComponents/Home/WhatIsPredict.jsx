@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
+import coinImage from "../../../assets/images/home/what_is_predict/what_is_predict_coin_image.webp";
+import ellipseImage from "../../../assets/images/home/what_is_predict/what_is_predict_ellipse.png";
+import backgroundImage from "../../../assets/images/home/what_is_predict/what_is_predict_bg.webp";
+import checkIcon from "../../../assets/images/home/what_is_predict/what_is_predict_check.webp";
 
-const backgroundImage = "https://www.figma.com/api/mcp/asset/7fb36196-c7af-45f0-a98a-fa24db40d6da";
-const coinImage = "https://www.figma.com/api/mcp/asset/7adb02e4-2a9a-48e2-9a8c-2bd8aa4eccbc";
-const ellipseImage = "https://www.figma.com/api/mcp/asset/a585eb86-8895-4981-aaf8-255cbc48b1ac";
-const checkIcon = "https://www.figma.com/api/mcp/asset/d8301168-f720-4203-8aa7-229a5733c7bf";
 
 export default function WhatIsPredict({
   title = "What is $PREDICT?",
@@ -19,7 +19,7 @@ export default function WhatIsPredict({
   buyButtonLink = "/buy",
 }) {
   return (
-    <section className="relative bg-black w-full overflow-hidden min-h-[698px] flex items-center justify-center py-12 md:py-20">
+    <section className="relative bg-black w-full overflow-hidden min-h-[698px] flex items-center justify-center py-12 md:py-16">
       {/* Blurred Background */}
       <div className="absolute inset-0 w-full h-full blur-[16.8px]">
         <img
@@ -33,7 +33,7 @@ export default function WhatIsPredict({
       </div>
 
       {/* Main Card Container */}
-      <div className="relative z-10 backdrop-blur-[18.65px] bg-[#04132c] border-[0.5px] border-[#2104ff] rounded-[44px] w-full max-w-[1302px] mx-auto px-6 md:px-12 lg:px-[48px] py-8 md:py-12 lg:py-[48px] min-h-[698px] flex flex-col lg:flex-row gap-8 lg:gap-[32px] items-center overflow-hidden">
+      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] gradient-border-rounded !rounded-[44px] w-full max-w-[1220px] mx-auto px-6 md:px-12 py-8 md:py-8 h-[638px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
         {/* Left Content */}
         <div className="flex-1 flex flex-col gap-[22px] items-start z-10">
           {/* Title */}
@@ -51,7 +51,7 @@ export default function WhatIsPredict({
             {benefits.map((benefit, index) => (
               <div key={index} className="flex gap-3 md:gap-[12px] items-center">
                 {/* Check Icon */}
-                <div className="bg-black border-[0.764px] border-white/51 rounded-[3.058px] w-[19.876px] h-[19.876px] flex items-center justify-center shrink-0">
+                <div className="border-[0.764px] border-white/51 rounded-[3.058px] w-[22px] h-[22px] flex items-center justify-center shrink-0">
                   <div className="w-[15.289px] h-[15.289px] flex items-center justify-center">
                     <img
                       src={checkIcon}
@@ -66,9 +66,9 @@ export default function WhatIsPredict({
                   </div>
                 </div>
                 {/* Benefit Text */}
-                <p className="text-[#cacaca] text-base md:text-[16px] font-medium leading-[24px] capitalize">
+                <h5 className="text-[#cacaca] text-base md:text-[16px] font-medium leading-[24px] capitalize">
                   {benefit}
-                </p>
+                </h5>
               </div>
             ))}
           </div>
@@ -83,7 +83,7 @@ export default function WhatIsPredict({
         </div>
 
         {/* Right Visual Content */}
-        <div className="flex-1 relative w-full lg:w-auto h-[400px] md:h-[500px] lg:h-[635px] flex items-center justify-center z-10">
+        <div className="flex-1 relative w-full h-[400px] md:h-[630px] flex items-center justify-center z-10">
           {/* Ellipse Background */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[445px] h-[498px] opacity-50">
             <img
