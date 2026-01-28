@@ -15,7 +15,7 @@
 }
 
 .what_is_predict_card_bg {
-  background-image: url('../../assets/images/home/what_is_predict/what_is_predict_card_bg.webp');
+  background-image: url('../../assets/images/home/what_is_predict/what_is_predict_card_bg2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,6 +32,9 @@
 @media screen and (max-width: 768px) {
   .predict_hero_bg {
     background-image: url('../../assets/images/home/predict_hero/predict_hero_bg_mobile.webp');
+  }
+  .what_is_predict_card_bg {
+    background-image: url('../../assets/images/home/what_is_predict/what_is_predict_card_bg2_mobile.webp');
   }
   .predict_hero_dashboard {
     background-image: url('../../assets/images/home/predict_hero/predict_hero_mobile.webp');
