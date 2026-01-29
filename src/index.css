@@ -102,6 +102,16 @@ h1, h2, h3, h4, h5, h6 {
   mask-composite: exclude;
 }
 
+.radial-dark-glow {
+  background:
+    radial-gradient(50% 50% at 50% 50%,
+      rgba(33, 4, 255, 0.30) 0%,
+      rgba(33, 4, 255, 0.00) 100%
+    ),
+    #020B10;
+}
+
+
 
 
 
