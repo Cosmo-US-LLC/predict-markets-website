@@ -63,14 +63,15 @@ export function Home() {
         subtitle={featuresConfig.subtitle}
         features={featuresData}
       />
+         <Markets
+        title={marketsConfig.title}
+        markets={marketsData}
+      />
       <HowItWorks
         title={howItWorksConfig.title}
         subtitle={howItWorksConfig.subtitle}
       />
-        <Markets
-        title={marketsConfig.title}
-        markets={marketsData}
-      />
+     
         <RevenueSharing
         title={revenueSharingConfig.title}
         description={revenueSharingConfig.description}
@@ -129,10 +130,10 @@ export function Home() {
         title={roadmapConfig.title}
         subtitle={roadmapConfig.subtitle}
       />
-      <PressReleases 
+      {/* <PressReleases 
         pressReleases={pressReleasesData}
         title={pressReleasesConfig.title}
-      />
+      /> */}
       <PredictionPlatform
         title={predictionPlatformConfig.title}
         subtitle={predictionPlatformConfig.subtitle}
