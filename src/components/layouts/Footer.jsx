@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Instagram, Send, Twitter } from 'lucide-react';
 import logoImage from '../../assets/images/logo/P_logo.svg';
+import xLogo from '../../assets/images/footer/X_logo.svg';
+import telegramLogo from '../../assets/images/footer/Telegram_logo.svg';
 
 const quickLinks = [
   { label: 'How to Buy', path: '/how-to-buy' },
@@ -17,9 +19,9 @@ const docsLinks = [
 ];
 
 const socialLinks = [
-  // { icon: Instagram, href: 'https://instagram.com/predictmarkets', label: 'Instagram' },
-  { icon: Send, href: 'https://t.me/predictmarkets', label: 'Telegram' },
-  // { icon: Twitter, href: 'https://x.com/predictmarkets', label: 'X (Twitter)' },
+  { icon: xLogo, href: 'https://x.com/predictmarkets', label: 'X (Twitter)' },
+  { icon: telegramLogo, href: 'https://t.me/predictmarkets', label: 'Telegram' },
+ 
 ];
 
 export function Footer() {
@@ -33,7 +35,7 @@ export function Footer() {
           {/* Top Section - Four Columns */}
           <div className="grid grid-cols-1 md:grid-cols-4 md:gap-14 gap-9">
             {/* Logo and Description */}
-            <div className="flex flex-col gap-[24px] md:gap-[45px] max-w-[257px]">
+            <div className="flex flex-col gap-[24px] md:gap-3 max-w-[257px]">
               <div className="flex items-center gap-[11.03px]">
                 <img 
                   src={logoImage} 
@@ -93,6 +95,8 @@ export function Footer() {
                 <div className="flex items-center gap-6">
                   {socialLinks.map((social) => {
                     const Icon = social.icon;
+                    const isImageIcon = typeof Icon === 'string';
+                    
                     return (
                       <a
                         key={social.label}
@@ -102,7 +106,15 @@ export function Footer() {
                         className="text-white hover:opacity-80 transition-opacity"
                         aria-label={social.label}
                       >
-                        <Icon className="w-[22px] h-[22px]" />
+                        {isImageIcon ? (
+                          <img 
+                            src={Icon} 
+                            alt={social.label}
+                            className="w-[22px] h-[22px] object-contain"
+                          />
+                        ) : (
+                          <Icon className="w-[22px] h-[22px]" />
+                        )}
                       </a>
                     );
                   })}

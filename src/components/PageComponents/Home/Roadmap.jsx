@@ -81,8 +81,9 @@ export default function Roadmap({
                           {item.status}
                         </span>
                       </div>
+                      
                     </div>
-
+                    <hr className='text-[#CACACA40] pb-4 w-full'/>
                     {/* Items List */}
                     
                     <div className="flex flex-col gap-8">

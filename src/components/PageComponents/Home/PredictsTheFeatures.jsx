@@ -119,7 +119,7 @@ export default function PredictsTheFeatures({
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-[#0f0f0f] gradient-border-rounded w-full md:w-[390px] overflow-hidden flex flex-col gap-3 md:gap-[12px] pb-6 md:pb-[24px] pt-4 md:pt-[16px] px-4 md:px-[16px]"
+              className="bg-[#0f0f0f] border-[#fff] border-[0.5px] rounded-[15px] w-full md:w-[390px] overflow-hidden flex flex-col gap-3 md:gap-[12px] pb-6 md:pb-[24px] pt-4 md:pt-[16px] px-4 md:px-[16px]"
             >
               {/* Image */}
               <div className="h-[152px] relative rounded-[15px] overflow-hidden">
