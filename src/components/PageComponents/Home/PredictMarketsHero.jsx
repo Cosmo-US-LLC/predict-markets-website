@@ -9,9 +9,6 @@ import predictMarketsHeroCoin3 from "../../../assets/images/home/predict_hero/co
 import predictMarketsHeroCoin4 from "../../../assets/images/home/predict_hero/coin_4.webp";
 import predictMarketsHeroCoin5 from "../../../assets/images/home/predict_hero/coin_5.webp";
 
-import predictHeroBg from "../../../assets/images/home/predict_hero/predict_hero_bg.webp";
-import predictDashboard from "../../../assets/images/home/predict_hero/predict_hero_desboard.webp";
-
 
 export default function PredictMarketsHero({
   title = "Own the future of prediction markets",
