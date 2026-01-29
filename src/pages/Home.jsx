@@ -121,7 +121,7 @@ export function Home() {
       <TokenDetails
         title={tokenDetailsConfig.title}
         subtitle={tokenDetailsConfig.subtitle}
-        chartImage={tokenDetailsConfig.chartImage}
+        // chartImage={tokenDetailsConfig.chartImage}
         details={tokenDetailsCards}
       />
       <Roadmap 
