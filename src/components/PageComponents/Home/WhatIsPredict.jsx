@@ -19,7 +19,7 @@ export default function WhatIsPredict({
   buyButtonLink = "/buy",
 }) {
   return (
-    <section className="relative bg-black w-full overflow-hidden flex items-center justify-center px-4 md:px-0 py-12 md:py-16">
+    <section id="what-is-predictmarkets" className="relative bg-black w-full overflow-hidden flex items-center justify-center px-4 md:px-0 py-12 md:py-16">
       {/* Blurred Background */}
       <div className="absolute inset-0 w-full h-full blur-[16.8px]">
         <img

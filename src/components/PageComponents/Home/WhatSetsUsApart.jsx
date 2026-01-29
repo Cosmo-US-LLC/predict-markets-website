@@ -29,13 +29,14 @@ export default function WhatSetsUsApart({
                   <div />
                   {/* PredictMarkets */}
                   <div className="flex flex-col items-center gap-2">
-                    <div className="w-[45px] h-[45px] rounded-[7px] bg-white/10 flex items-center justify-center">
-                      <div className="w-[24px] h-[30px] flex flex-wrap gap-0.5">
-                        {[...Array(8)].map((_, i) => (
+                    <div className="w-[45px] h-[45px]  ">
+                      
+                        {/* {[...Array(8)].map((_, i) => (
                           <div key={i} className="w-[7px] h-[6.5px] bg-white rounded-[1px]" />
-                        ))}
+                        ))} */}
+                        <img src={platforms?.predictMarkets?.icon} alt="PredictMarkets" className="w-[full] h-[full] object-contain" />
                       </div>
-                    </div>
+                     
                     <span className="text-white text-base font-medium">
                       {platforms.predictMarkets?.name || 'PredictMarkets'}
                     </span>

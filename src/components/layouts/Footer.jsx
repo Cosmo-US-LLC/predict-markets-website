@@ -5,10 +5,10 @@ import xLogo from '../../assets/images/footer/X_logo.svg';
 import telegramLogo from '../../assets/images/footer/Telegram_logo.svg';
 
 const quickLinks = [
-  { label: 'How to Buy', path: '/how-to-buy' },
+  { label: 'How to Buy', path: '/#how-to-buy', isHash: true, scrollId: 'how-to-buy' },
   { label: 'Roadmap', path: '/roadmap' },
   { label: 'Token Allocation', path: '/token-allocation' },
-  { label: 'What is PredictMarkets', path: '/what-is-predictmarkets' },
+  { label: 'What is PredictMarkets', path: '/#what-is-predictmarkets', isHash: true, scrollId: 'what-is-predictmarkets' },
 ];
 
 const docsLinks = [
@@ -56,13 +56,30 @@ export function Footer() {
               </h3>
               <nav className="flex flex-col gap-1.5 pl-4">
                 {quickLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    className="text-[#cacaca] text-base leading-6 tracking-[0.32px] hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
+                  link.isHash ? (
+                    <a
+                      key={link.path}
+                      href={link.path}
+                      className="text-[#cacaca] text-base leading-6 tracking-[0.32px] hover:text-white transition-colors"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const element = document.getElementById(link.scrollId);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                      }}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={link.path}
+                      to={link.path}
+                      className="text-[#cacaca] text-base leading-6 tracking-[0.32px] hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  )
                 ))}
               </nav>
             </div>
