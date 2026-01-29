@@ -63,7 +63,7 @@ export function Home() {
         subtitle={featuresConfig.subtitle}
         features={featuresData}
       />
-         <Markets
+      <Markets
         title={marketsConfig.title}
         markets={marketsData}
       />

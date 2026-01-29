@@ -21,6 +21,7 @@ export default function HowToBuy({
 
   return (
     <section 
+      id="how-to-buy"
       className="bg-[#020b10] py-12 md:py-20  relative overflow-hidden"
       style={{
         backgroundImage: `radial-gradient(ellipse at center, rgba(33, 4, 255, 0.63) 0%, rgba(33, 4, 255, 0) 70%), linear-gradient(90deg, rgb(2, 11, 16) 0%, rgb(2, 11, 16) 100%)`,
