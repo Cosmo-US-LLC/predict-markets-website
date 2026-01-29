@@ -1,5 +1,12 @@
 import { Link } from 'react-router-dom';
 import { cn } from '../../../lib/utils';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '../../ui/carousel';
 
 export default function HowToBuy({
   steps = [],
@@ -31,18 +38,68 @@ export default function HowToBuy({
           </p>
         </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[21px] mb-12 md:mb-12">
-          {steps.map((step, index) => (
+        {/* Mobile Carousel */}
+        <div className="md:hidden mb-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-3">
+              {steps.map((step) => (
+                <CarouselItem key={step.id} className="pl-3">
+                  <div className="bg-[#0f0f0f] gradient-border-rounded p-4 flex flex-col gap-[19px]">
+                    {/* Image Container */}
+                    <div 
+                      className="h-[160px] rounded-[15px] overflow-hidden relative"
+                      style={{
+                        backgroundImage: "linear-gradient(143.47815653030875deg, rgb(13, 0, 109) 29.719%, rgb(18, 0, 157) 79.19%)",
+                      }}
+                    >
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+
+                    {/* Text Content */}
+                    <div className="flex flex-col gap-2">
+                      {/* Step Header */}
+                      <div className="flex gap-3 flex-col">
+                        <div className="border border-[#2104ff] max-w-[70px] rounded-[41.006px] px-3 py-1">
+                          <span className="text-white text-sm font-normal leading-[22px] tracking-[0.28px] whitespace-nowrap">
+                            {step.stepNumber}
+                          </span>
+                        </div>
+                        <h3 className="text-white text-xl font-medium leading-7 capitalize">
+                          {step.title}
+                        </h3>
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-[#cacaca] text-sm leading-[22px] h-[90px] tracking-[0.28px]">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-2 gap-[21px] mb-12">
+          {steps.map((step) => (
             <div
               key={step.id}
-              className={cn(
-                "bg-[#0f0f0f] gradient-border-rounded p-4 md:p-[26px] flex flex-col gap-[19px]",
-                index === 0 && "md:col-span-1",
-                index === 1 && "md:col-span-1",
-                index === 2 && "md:col-span-1",
-                index === 3 && "md:col-span-1"
-              )}
+              className="bg-[#0f0f0f] gradient-border-rounded p-[26px] flex flex-col gap-[19px]"
             >
               {/* Image Container */}
               <div 
@@ -70,7 +127,7 @@ export default function HowToBuy({
                       {step.stepNumber}
                     </span>
                   </div>
-                  <h3 className="text-white text-xl md:text-2xl font-medium leading-8 capitalize whitespace-nowrap">
+                  <h3 className="text-white text-2xl font-medium leading-8 capitalize whitespace-nowrap">
                     {step.title}
                   </h3>
                 </div>
