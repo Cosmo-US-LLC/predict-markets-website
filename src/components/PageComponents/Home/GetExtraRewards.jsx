@@ -72,15 +72,15 @@ export default function GetExtraRewards({
   }
 
   return (
-    <section className="bg-[#020b10] py-12 md:py-[60px] ">
-      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
+    <section className="bg-[#020b10] py-12 md:py-[60px] md:px-0 px-4 get_extra_rewards_card_bg">
+      <div className="max-w-[1220px] bg-[#020B10] gradient-border-rounded !rounded-[38px] mx-auto p-4 md:p-10">
         <div className="flex flex-col lg:flex-row gap-10 items-center">
           {/* Left Side - Static Slider Section */}
           <div className="flex flex-col gap-6 flex-1 max-w-[597px] w-full">
             {/* Slider */}
             <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-4 max-w-[640px] w-full mb-10">
-                <h2 className="heading-two capitalize text-[#ffffff]">
+              <div className="flex flex-col gap-4 max-w-[640px] w-full mb-10 md:mb-4">
+                <h2 className="heading-two capitalize md:!leading-[48px] !leading-[34px] text-[#ffffff]">
                   {title}
                 </h2>
                 <p className="text-[#cacaca] text-base font-normal leading-[24px] tracking-[0.32px]">
@@ -174,7 +174,7 @@ export default function GetExtraRewards({
 
                           {/* NFT Card with single image */}
                           <div
-                            className="bg-black border-[0.5px] border-white rounded-[15px] h-[174px] w-full relative overflow-hidden shadow-lg"
+                            className="bg-black border-[0.5px] border-white rounded-[15px] md:h-[174px] h-[157px] w-full relative overflow-hidden shadow-lg"
                             style={{ boxShadow: `0px 0px 10.1px 0px ${card.shadowColor}` }}
                           >
                             {/* Background Gradient */}

@@ -28,6 +28,13 @@
   background-repeat: no-repeat;
 }
 
+.get_extra_rewards_card_bg {
+  background-image: url('../../assets/images/home/get_extra_rewards/get_extra_rewards_bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 @media screen and (max-width: 768px) {
   .predict_hero_bg {
