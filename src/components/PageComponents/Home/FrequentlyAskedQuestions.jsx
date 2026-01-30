@@ -36,7 +36,7 @@ export default function FrequentlyAskedQuestions() {
       <div className="max-w-[1280px] mx-auto md:px-4 px-0">
         {/* Header Section */}
         <div className="flex flex-col gap-2 items-center text-center mb-12 md:mb-16">
-          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+          <h2 className="heading-two capitalize text-[#ffffff]">
             Frequently Asked Questions
           </h2>
           <p className="text-[#cacaca] paragraph-regular max-w-[812px]">

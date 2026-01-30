@@ -57,6 +57,8 @@ export function Home() {
         benefits={whatIsPredictConfig.benefits}
         buyButtonText={whatIsPredictConfig.buyButtonText}
         buyButtonLink={whatIsPredictConfig.buyButtonLink}
+        secondaryButtonText={whatIsPredictConfig.secondaryButtonText}
+        secondaryButtonLink={whatIsPredictConfig.secondaryButtonLink}
       />
         <PredictsTheFeatures
         title={featuresConfig.title}

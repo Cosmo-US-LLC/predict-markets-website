@@ -35,7 +35,7 @@ export default function PredictionPlatform({
           {/* Content */}
           <div className="relative z-10 flex flex-col gap-[22px] items-center justify-center min-h-[290px] px-4 py-8">
             {/* Title */}
-            <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center max-w-[941px]">
+            <h2 className="heading-two capitalize text-[#ffffff] text-center max-w-[941px]">
               {title}
             </h2>
 

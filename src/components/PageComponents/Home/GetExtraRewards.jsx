@@ -80,7 +80,7 @@ export default function GetExtraRewards({
             {/* Slider */}
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-4 max-w-[640px] w-full mb-10">
-                <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+                <h2 className="heading-two capitalize text-[#ffffff]">
                   {title}
                 </h2>
                 <p className="text-[#cacaca] text-base font-normal leading-[24px] tracking-[0.32px]">

@@ -57,7 +57,7 @@ export default function Markets({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-12">
         {/* Header */}
         <div className="flex items-start justify-between w-full">
-          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent ">
+          <h2 className="heading-two capitalize text-[#ffffff]">
             {title}
           </h2>
           

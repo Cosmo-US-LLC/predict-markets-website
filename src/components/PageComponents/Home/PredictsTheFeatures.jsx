@@ -64,7 +64,7 @@ export default function PredictsTheFeatures({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-12 items-center">
         {/* Header */}
         <div className="flex flex-col gap-2 md:gap-[8px] items-center text-center max-w-[834px]">
-          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent max-w-[952px] whitespace-pre-wrap">
+          <h2 className="heading-two capitalize text-[#ffffff] max-w-[952px] whitespace-pre-wrap">
              {title}
           </h2>
           <p className="text-[#a3a3a3] paragraph-regular whitespace-pre-wrap">
