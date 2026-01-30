@@ -11,7 +11,7 @@ export default function WhatSetsUsApart({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-8 md:gap-10">
         {/* Header */}
         <div className="flex flex-col gap-3 max-w-[868px] text-center mx-auto">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize text-[#ffffff]">
             {title}
           </h2>
           <p className="text-[#cacaca] text-base leading-6 tracking-[0.32px]">
@@ -29,13 +29,14 @@ export default function WhatSetsUsApart({
                   <div />
                   {/* PredictMarkets */}
                   <div className="flex flex-col items-center gap-2">
-                    <div className="w-[45px] h-[45px] rounded-[7px] bg-white/10 flex items-center justify-center">
-                      <div className="w-[24px] h-[30px] flex flex-wrap gap-0.5">
-                        {[...Array(8)].map((_, i) => (
+                    <div className="w-[45px] h-[45px]  ">
+                      
+                        {/* {[...Array(8)].map((_, i) => (
                           <div key={i} className="w-[7px] h-[6.5px] bg-white rounded-[1px]" />
-                        ))}
+                        ))} */}
+                        <img src={platforms?.predictMarkets?.icon} alt="PredictMarkets" className="w-[full] h-[full] object-contain" />
                       </div>
-                    </div>
+                     
                     <span className="text-white text-base font-medium">
                       {platforms.predictMarkets?.name || 'PredictMarkets'}
                     </span>

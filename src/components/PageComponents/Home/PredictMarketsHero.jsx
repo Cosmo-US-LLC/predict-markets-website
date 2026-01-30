@@ -55,7 +55,7 @@ export default function PredictMarketsHero({
         {/* Hero Content - Below Image */}
         <div className="flex flex-col gap-6 items-center text-center mb-8 md:mb-12">
           {/* Title */}
-          <h1 className="heading-one capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent max-w-[784px]">
+          <h1 className="heading-one capitalize text-[#ffffff] max-w-[784px]">
             {title}
           </h1>
 

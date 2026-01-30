@@ -7,8 +7,8 @@ import { cn } from '../../lib/utils';
 import logoImage from '../../assets/images/logo/P_logo.svg';
 
 const navLinks = [
-  { label: 'What is PredictMarkets?', path: '/what-is-predictmarkets' },
-  { label: 'How to Buy', path: '/how-to-buy' },
+  { label: 'What is PredictMarkets?', path: '/#what-is-predictmarkets', isHash: true, scrollId: 'what-is-predictmarkets' },
+  { label: 'How to Buy', path: '/#how-to-buy', isHash: true, scrollId: 'how-to-buy' },
   { label: 'Whitepaper', path: '/whitepaper' },
   { label: 'Referral', path: '/referral' },
   { label: 'Win $250K', path: '/win-250k' },
@@ -50,13 +50,30 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-5 text-white text-base font-normal leading-6">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className="hover:opacity-80 transition-opacity whitespace-nowrap"
-            >
-              {link.label}
-            </Link>
+            link.isHash ? (
+              <a
+                key={link.path}
+                href={link.path}
+                className="hover:opacity-80 transition-opacity whitespace-nowrap"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById(link.scrollId);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="hover:opacity-80 transition-opacity whitespace-nowrap"
+              >
+                {link.label}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -129,12 +146,28 @@ export function Header() {
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <SheetClose key={link.path} asChild>
-                      <Link
-                        to={link.path}
-                        className="text-white text-base font-normal hover:opacity-80 transition-opacity py-2"
-                      >
-                        {link.label}
-                      </Link>
+                      {link.isHash ? (
+                        <a
+                          href={link.path}
+                          className="text-white text-base font-normal hover:opacity-80 transition-opacity py-2"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            const element = document.getElementById(link.scrollId);
+                            if (element) {
+                              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                          }}
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={link.path}
+                          className="text-white text-base font-normal hover:opacity-80 transition-opacity py-2"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </SheetClose>
                   ))}
                 </nav>

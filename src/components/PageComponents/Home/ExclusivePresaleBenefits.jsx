@@ -35,7 +35,7 @@ export default function ExclusivePresaleBenefits({
     <section className="bg-[#020b10] py-12 md:py-[60px] ">
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Title */}
-        <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center mb-12 md:mb-[48px]">
+        <h2 className="heading-two capitalize text-[#ffffff] text-center mb-12 md:mb-[48px]">
           {title}
         </h2>
 

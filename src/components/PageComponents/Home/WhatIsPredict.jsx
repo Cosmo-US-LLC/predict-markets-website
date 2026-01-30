@@ -17,9 +17,11 @@ export default function WhatIsPredict({
   ],
   buyButtonText = "BUY $PREDICT",
   buyButtonLink = "/buy",
+  secondaryButtonText = "Visit PredictMarkets (Beta)",
+  secondaryButtonLink = "/what-is-predictmarkets",
 }) {
   return (
-    <section className="relative bg-black w-full overflow-hidden flex items-center justify-center px-4 md:px-0 py-12 md:py-16">
+    <section id="what-is-predictmarkets" className="relative bg-black w-full overflow-hidden flex items-center justify-center px-4 md:px-0 py-12 md:py-16">
       {/* Blurred Background */}
       <div className="absolute inset-0 w-full h-full blur-[16.8px]">
         <img
@@ -33,11 +35,11 @@ export default function WhatIsPredict({
       </div>
 
       {/* Main Card Container */}
-      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] gradient-border-rounded !rounded-[32px] w-full max-w-[1220px] mx-auto px-6 md:px-12 py-8 md:py-8 md:h-[638px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
+      <div className="relative z-10 backdrop-blur-[18.65px] what_is_predict_card_bg bg-[#04132c] gradient-border-rounded !rounded-[32px] w-full max-w-[1220px] mx-auto px-6 md:px-12 py-8 md:py-8 md:h-[580px] flex flex-col md:flex-row gap-8 md:gap-[32px] items-center overflow-hidden">
         {/* Left Content */}
         <div className="flex-1 flex flex-col gap-[22px] items-start z-10">
           {/* Title */}
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent whitespace-nowrap">
+          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize text-[#ffffff] whitespace-nowrap">
             {title}
           </h2>
 
@@ -74,12 +76,21 @@ export default function WhatIsPredict({
           </div>
 
           {/* Buy Button */}
+          <div className='flex flex-col md:flex-row gap-4'>
           <Link
             to={buyButtonLink}
-            className="btn_primary w-full sm:w-[210px] h-[50px] flex items-center justify-center"
+            className="btn_primary flex items-center justify-center"
           >
             {buyButtonText}
           </Link>
+
+          <Link
+            to={secondaryButtonLink}
+            className="btn_outline flex items-center justify-center"
+          >
+            {secondaryButtonText}
+          </Link>
+          </div>
         </div>
 
         {/* Right Visual Content */}

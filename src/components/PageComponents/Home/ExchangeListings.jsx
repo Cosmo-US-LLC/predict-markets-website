@@ -12,7 +12,7 @@ export default function ExchangeListings({
     <section className="w-full bg-[#020b10] py-12 md:py-[84px]">
       <div className="w-full max-w-[1280px] mx-auto px-4 md:px-8  flex flex-col md:gap-12 gap-6 items-center">
         {/* Title */}
-        <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] via-[#bbe1ff] to-white bg-clip-text text-transparent text-center max-w-[840px]">
+        <h2 className="heading-two capitalize text-center max-w-[840px] text-[#FFF]">
           {title.split('\n').map((line, index) => (
             <span key={index}>
               {line}
@@ -26,9 +26,9 @@ export default function ExchangeListings({
           {exchanges.map((exchange) => (
             <div
               key={exchange.id}
-              className="bg-[#0f0f0f]  border-[0.5px] border-[#FFF] md:!rounded-[15px] !rounded-[10px] md:h-[156px] h-[70px] w-[100px] md:w-[229px] overflow-hidden relative flex items-center justify-center"
+              className="bg-[#0f0f0f] backdrop-blur-[98.65px] border-[0.5px] border-[#FFF] rounded-[15px] md:h-[156px] h-[70px] w-[100px] md:w-[229px] overflow-hidden relative flex items-center justify-center"
             >
-              <div className="flex items-center justify-center w-full h-full">
+              <div className="flex items-center justify-center w-full h-full p-4">
                 <img
                   src={exchange.logo}
                   alt={`Exchange ${exchange.id}`}

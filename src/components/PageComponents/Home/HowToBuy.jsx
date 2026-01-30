@@ -21,6 +21,7 @@ export default function HowToBuy({
 
   return (
     <section 
+      id="how-to-buy"
       className="bg-[#020b10] py-12 md:py-20  relative overflow-hidden"
       style={{
         backgroundImage: `radial-gradient(ellipse at center, rgba(33, 4, 255, 0.63) 0%, rgba(33, 4, 255, 0) 70%), linear-gradient(90deg, rgb(2, 11, 16) 0%, rgb(2, 11, 16) 100%)`,
@@ -30,7 +31,7 @@ export default function HowToBuy({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 relative z-10">
         {/* Header Section */}
         <div className="flex flex-col gap-[9px] items-center text-center mb-12 md:mb-12">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2.56px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2.56px] capitalize text-[#ffffff]">
             {title}
           </h2>
           <p className="text-[#cacaca] text-base leading-[22.4px] tracking-[0.32px] max-w-[703px]">
