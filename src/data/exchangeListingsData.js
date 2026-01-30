@@ -1,8 +1,8 @@
-import uniswapLogo1 from "../assets/images/home/exchange_listings/uniswap_logo1.webp";
-import uniswapLogo2 from "../assets/images/home/exchange_listings/uniswap_logo2.png";
-import uniswapLogo3 from "../assets/images/home/exchange_listings/uniswap_logo3.png";
-import uniswapLogo4 from "../assets/images/home/exchange_listings/uniswap_logo4.png";
-import uniswapLogo5 from "../assets/images/home/exchange_listings/uniswap_logo5.png";
+import uniswapLogo1 from "../assets/images/home/exchange_listings/uniswap_logo.svg";
+import uniswapLogo2 from "../assets/images/home/exchange_listings/uniswap_logo_blur.png";
+import uniswapLogo3 from "../assets/images/home/exchange_listings/uniswap_logo_blur.png";
+import uniswapLogo4 from "../assets/images/home/exchange_listings/uniswap_logo_blur.png";
+import uniswapLogo5 from "../assets/images/home/exchange_listings/uniswap_logo_blur.png";
 
 export const exchangeListingsData = [
   { id: 1, logo: uniswapLogo1 },

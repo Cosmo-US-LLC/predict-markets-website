@@ -40,7 +40,7 @@ export default function Roadmap({
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="flex flex-col gap-[14px] items-center mb-12 md:mb-12">
-          <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent text-center">
+          <h2 className="heading-two capitalize text-[#ffffff] text-center">
             {title}
           </h2>
           <p className="text-white paragraph-regular text-center max-w-4xl">

@@ -15,7 +15,7 @@ export default function HowItWorks({
     >
       <div className="w-[90%] md:max-w-[1220px] mx-auto px-4 md:px-8 py-12 md:py-16 relative gradient-border-rounded flex flex-col gap-12">
         <div className="relative z-10 flex flex-col gap-2 md:gap-[8px] items-center text-center">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent w-full">
+          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize text-[#ffffff] w-full">
             {title}
           </h2>
           <p className="text-[#cacaca] text-base md:text-[16px] font-normal leading-[24px] tracking-[0.32px] max-w-[767px] whitespace-pre-wrap">

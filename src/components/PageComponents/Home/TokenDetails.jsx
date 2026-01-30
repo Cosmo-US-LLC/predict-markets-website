@@ -28,7 +28,7 @@ export default function TokenDetails({
       <div className="max-w-[1280px] mx-auto flex flex-col gap-10 md:gap-12">
         {/* Header */}
         <div className="flex flex-col gap-2 items-center text-center">
-          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-[45px] font-medium leading-[53px] tracking-[-2px] capitalize text-[#ffffff]">
             {title}
           </h2>
           <p className="text-[#cacaca] text-base leading-6 tracking-[0.32px] max-w-[713px]">

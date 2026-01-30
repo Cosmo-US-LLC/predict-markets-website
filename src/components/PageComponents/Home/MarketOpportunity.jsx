@@ -68,7 +68,7 @@ export default function MarketOpportunity({
           <div className="flex flex-col gap-8 md:gap-12 flex-1 max-w-[628px]">
             {/* Text Content */}
             <div className="flex flex-col gap-4 text-center md:text-left">
-              <h2 className="heading-two capitalize bg-gradient-to-t from-[#b2ddff] to-white bg-clip-text text-transparent">
+              <h2 className="heading-two capitalize text-[#ffffff]">
                 {title}
               </h2>
               <div className="text-[#cacaca] paragraph-regular whitespace-pre-line">
